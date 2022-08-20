@@ -137,6 +137,11 @@ button,
   align-content: center;
 }
 
+.flex-direction-r {
+  flex-direction: column;
+  background: blue;
+}
+
 /*=====  Section 1 [ Header ]  ======*/
 .header {
   /*background: blue;*/
@@ -247,6 +252,9 @@ button,
 .vehicules__title {
   font-size: 50px;
   font-weight: 800;
+  display: flex;
+  justify-content: center;
+  background: yellow;
 }
 .vehicules___cards {
   display: flex;
