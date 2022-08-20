@@ -1,4 +1,22 @@
 .hero {
+  &__box-text {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 17.25rem;
+    padding: 0.9375rem;
+    color: white;
+  }
+  &__truck-background {
+    background: $greenTruck;
+    img {
+      //TODO
+      /*coller l'image au bord droite*/
+      margin-left: 17.25rem;
+    }
+  }
 }
 
 /* Slide Effect

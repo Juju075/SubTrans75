@@ -77,7 +77,7 @@ button,
 **/
 /* 1440px + hyperclass ok*/
 .container {
-  /*background: red;*/
+  background: red;
   max-width: 90rem;
   margin: auto;
   /*----------  Hyperclass ----------*/
@@ -154,6 +154,9 @@ button,
    * >>> span
    */
 }
+.headergreen {
+  background: #039b4a;
+}
 .header nav {
   display: flex;
   align-items: center;
@@ -201,6 +204,24 @@ button,
 }
 .header__location i {
   cursor: pointer;
+}
+
+.hero__box-text {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 17.25rem;
+  padding: 0.9375rem;
+  color: white;
+}
+.hero__truck-background {
+  background: #039b4a;
+}
+.hero__truck-background img {
+  /*coller l'image au bord droite*/
+  margin-left: 17.25rem;
 }
 
 /* Slide Effect

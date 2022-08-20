@@ -2,6 +2,9 @@
 .header {
   /*background: blue;*/
 
+  &green {
+    background: $greenTruck;
+  }
   //TODO
   /** 
    * Section Name
