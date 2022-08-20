@@ -1,0 +1,11 @@
+.vehicules {
+  margin-top: 100px;
+  &__title {
+    font-size: 50px;
+    font-weight: 800;
+  }
+  &___cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

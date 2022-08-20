@@ -241,5 +241,16 @@ button,
     left: 100px;  
 }
 */
+.vehicules {
+  margin-top: 100px;
+}
+.vehicules__title {
+  font-size: 50px;
+  font-weight: 800;
+}
+.vehicules___cards {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 /*# sourceMappingURL=style.css.map */
