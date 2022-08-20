@@ -8,12 +8,24 @@
     justify-content: center;
   }
 
-  &___cards {
+  &__frame {
     display: flex;
     flex-wrap: wrap;
     margin-top: 3.125rem;
     max-width: 1110px;
     justify-content: space-between;
     background: yellow;
+  }
+  &__card {
+    /*margin-left: 200px;*/
+    margin: 25px 0 25px 0;
+    background: white;
+    border-radius: 10px;
+    -webkit-box-shadow: 5px 9px 22px 4px rgba(0, 0, 0, 0.36);
+    box-shadow: 5px 9px 22px 4px rgba(0, 0, 0, 0.36);
+    img {
+      height: 139px;
+      width: 305px;
+    }
   }
 }
