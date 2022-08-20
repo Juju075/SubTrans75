@@ -24,7 +24,7 @@ h3 {
   margin-top: 0px;
   font-weight: 300; //TODO
   line-height: 1.15; // used to set the distance between lines of text.
-  color: $darkBlue;
+  /*color: $darkBlue;*/ //TODO
   font-size: 2.31rem; //TODO
 }
 
@@ -63,8 +63,6 @@ button,
   }
 }
 
-/*----------  Subsection comment block  ----------*/
-
 /*=====  Spacing naming  ======*/
 /** 
 1- --pall(padding all)
@@ -76,8 +74,72 @@ button,
 7- --pb(padding bottom)
 **/
 
+/* 1440px ok*/
 .container {
   //TODO
+  background: red;
   max-width: 90rem;
   margin: auto;
+
+  /*----------  Hyperclass ----------*/
+  &--pall {
+    padding-top: 4.375rem;
+    padding-bottom: 4.375rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+
+    @include breakpoint-up(large) {
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+    }
+  }
+  &--py {
+    // Vertical
+    padding-top: 4.375rem;
+    padding-bottom: 4.375remm;
+
+    @include breakpoint-up(large) {
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+    }
+  }
+  &--px {
+    //Horizontal
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  &--pt {
+    padding-top: 4.375rem;
+
+    /*Breakpoint*/
+    /**/
+  }
+  &--pl {
+    padding-left: 1.5rem;
+  }
+  &--pr {
+    padding-right: 1.5rem;
+  }
+  &--pb {
+    padding-bottom: 4.375rem;
+
+    /*Breakpoint*/
+    /**/
+  }
+}
+
+//Display
+.flex {
+  display: flex;
+
+  //Hyperclass
+  &-jc-sb {
+    justify-content: space-between;
+  }
+  &-jc-c {
+    justify-content: space-between;
+  }
+  &-ai-c {
+    align-content: center;
+  }
 }

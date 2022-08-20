@@ -1,0 +1,143 @@
+/*----------  Primary colors  ----------*/
+/*----------  Neutral  ----------*/
+/*----------  Font Sizes  ----------*/
+/*----------  Mobile max approach  ----------*/
+/*----------  Desktop min approach  ----------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Public Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0px;
+  font-weight: 300;
+  line-height: 1.15;
+  /*color: $darkBlue;*/
+  font-size: 2.31rem;
+}
+
+a,
+a:visited,
+a:hover {
+  color: white;
+}
+
+/*----------  Buttons  ----------*/
+button,
+.button {
+  display: inline-block;
+  padding: 0;
+  background: white;
+  border-radius: 0px;
+  border: 0;
+  color: black;
+  font-weight: 100;
+  font-size: 0.875rem;
+  transition: opacity 300ms ease-in-out;
+  cursor: pointer;
+}
+
+/*----------  MediaQueries (Mobile First) ----------*/
+@media (max-width: 63.9375em) {
+  .hide-for-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 64em) {
+  .hide-for-desktop {
+    display: none;
+  }
+}
+
+/*=====  Spacing naming  ======*/
+/** 
+1- --pall(padding all)
+2- --py(padding vertical)
+3- --px(padding horizontal)
+4- --pt(padding top)
+5- --pl(padding left)
+6- --pr(padding right)
+7- --pb(padding bottom)
+**/
+/* 1440px ok*/
+.container {
+  background: red;
+  max-width: 90rem;
+  margin: auto;
+  /*----------  Hyperclass ----------*/
+}
+.container--pall {
+  padding-top: 4.375rem;
+  padding-bottom: 4.375rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+@media (min-width: 64em) {
+  .container--pall {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+.container--py {
+  padding-top: 4.375rem;
+  padding-bottom: 4.375remm;
+}
+@media (min-width: 64em) {
+  .container--py {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+.container--px {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.container--pt {
+  padding-top: 4.375rem;
+  /*Breakpoint*/
+  /**/
+}
+.container--pl {
+  padding-left: 1.5rem;
+}
+.container--pr {
+  padding-right: 1.5rem;
+}
+.container--pb {
+  padding-bottom: 4.375rem;
+  /*Breakpoint*/
+  /**/
+}
+
+.flex {
+  display: flex;
+}
+.flex-jc-sb {
+  justify-content: space-between;
+}
+.flex-jc-c {
+  justify-content: space-between;
+}
+.flex-ai-c {
+  align-content: center;
+}
+
+/*=====  Section 1 [ Header ]  ======*/
+
+/*# sourceMappingURL=style.css.map */
