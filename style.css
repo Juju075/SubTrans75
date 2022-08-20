@@ -75,7 +75,7 @@ button,
 6- --pr(padding right)
 7- --pb(padding bottom)
 **/
-/* 1440px ok*/
+/* 1440px + hyperclass ok*/
 .container {
   background: red;
   max-width: 90rem;
@@ -139,5 +139,58 @@ button,
 }
 
 /*=====  Section 1 [ Header ]  ======*/
+.header {
+  background: blue;
+  /** 
+   * Section Name
+   * > <nav>
+   * >> header__block
+   * >>> header__logo
+   * >>> header__text
+   * >> header__links
+   * >>> <a>
+   * >> header__location
+   * >>> img
+   * >>> span
+   */
+  /*__ Rules modification*/
+}
+.header nav {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  padding-left: 3.45rem;
+}
+.header__block {
+  background: magenta;
+}
+.header__logo img {
+  width: 5.625rem;
+  height: 3.25rem;
+}
+.header__logo span {
+  display: block;
+  background: yellow;
+}
+.header__text {
+  display: block;
+}
+.header__links {
+  background: green;
+}
+.header__links a {
+  position: relative;
+  font-size: 0.875rem;
+  color: black;
+}
+.header__links a:not(:last-child) {
+  margin-right: 2rem;
+}
+.header__location span {
+  position: relative;
+  font-size: 0.875rem;
+  color: black;
+  margin-right: 2rem;
+  background: yellow;
+}
 
 /*# sourceMappingURL=style.css.map */

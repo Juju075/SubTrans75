@@ -1,3 +1,70 @@
 /*=====  Section 1 [ Header ]  ======*/
 .header {
+  background: blue;
+
+  //TODO
+  /** 
+   * Section Name
+   * > <nav>
+   * >> header__block
+   * >>> header__logo
+   * >>> header__text
+   * >> header__links
+   * >>> <a>
+   * >> header__location
+   * >>> img
+   * >>> span
+   */
+
+  nav {
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+    padding-left: 3.45rem;
+  }
+
+  /*__ Rules modification*/
+
+  &__block {
+    background: magenta;
+  }
+
+  &__logo {
+    img {
+      width: 5.625rem;
+      height: 3.25rem;
+    }
+    //TODO
+    span {
+      display: block;
+      background: yellow;
+    }
+  }
+
+  &__text {
+    display: block;
+  }
+  &__links {
+    background: green;
+    a {
+      position: relative;
+      font-size: $font-sm;
+      color: $black;
+
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+    }
+  }
+
+  &__location {
+    img {
+    }
+    span {
+      position: relative;
+      font-size: $font-sm;
+      color: $black;
+      margin-right: 2rem; //TODO
+      background: yellow;
+    }
+  }
 }
