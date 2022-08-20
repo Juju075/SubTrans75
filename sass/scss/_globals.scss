@@ -1,0 +1,83 @@
+@import "_mixins.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Public Sans", sans-serif; //TODO
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0px;
+  font-weight: 300; //TODO
+  line-height: 1.15; // used to set the distance between lines of text.
+  color: $darkBlue;
+  font-size: 2.31rem; //TODO
+}
+
+a,
+a:visited,
+a:hover {
+  color: white; //TODO
+}
+
+/*----------  Buttons  ----------*/
+button,
+.button {
+  //TODO
+  display: inline-block;
+  padding: 0;
+  background: white;
+  border-radius: 0px;
+  border: 0;
+  color: black;
+  font-weight: 100;
+  font-size: $font-sm;
+  transition: opacity 300ms ease-in-out;
+  cursor: pointer;
+}
+/*----------  MediaQueries (Mobile First) ----------*/
+.hide-for-mobile {
+  //hide for mobile and tablet button menu
+  @include breakpoint-down(medium) {
+    display: none;
+  }
+}
+.hide-for-desktop {
+  //hide for desktop  hamburger
+  @include breakpoint-up(large) {
+    display: none;
+  }
+}
+
+/*----------  Subsection comment block  ----------*/
+
+/*=====  Spacing naming  ======*/
+/** 
+1- --pall(padding all)
+2- --py(padding vertical)
+3- --px(padding horizontal)
+4- --pt(padding top)
+5- --pl(padding left)
+6- --pr(padding right)
+7- --pb(padding bottom)
+**/
+
+.container {
+  //TODO
+  max-width: 90rem;
+  margin: auto;
+}
