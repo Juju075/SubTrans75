@@ -14,7 +14,6 @@
     margin-top: 3.125rem;
     max-width: 1110px;
     justify-content: space-between;
-    background: yellow;
   }
   &__card {
     /*margin-left: 200px;*/
@@ -26,6 +25,12 @@
     img {
       height: 139px;
       width: 305px;
+      border-radius: 10px 10px 0 0;
     }
+  }
+  .model {
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 300; //TODO
   }
 }

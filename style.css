@@ -141,7 +141,6 @@ button,
   flex-direction: column;
   display: flex;
   align-items: center;
-  background: blue;
 }
 
 /*=====  Section 1 [ Header ]  ======*/
@@ -263,7 +262,6 @@ button,
   margin-top: 3.125rem;
   max-width: 1110px;
   justify-content: space-between;
-  background: yellow;
 }
 .vehicules__card {
   /*margin-left: 200px;*/
@@ -276,6 +274,12 @@ button,
 .vehicules__card img {
   height: 139px;
   width: 305px;
+  border-radius: 10px 10px 0 0;
+}
+.vehicules .model {
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: 300;
 }
 
 /*# sourceMappingURL=style.css.map */
