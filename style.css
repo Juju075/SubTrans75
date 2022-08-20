@@ -178,6 +178,8 @@ button,
   display: block;
 }
 .header__links {
+  display: flex;
+  align-items: center;
   background: green;
 }
 .header__links a {
@@ -189,6 +191,8 @@ button,
   margin-right: 2rem;
 }
 .header__location {
+  display: flex;
+  align-items: center;
   background: yellow;
 }
 .header__location img {
