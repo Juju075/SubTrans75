@@ -17,7 +17,10 @@
    */
 
   nav {
+    display: flex;
+    justify-content: space-between;
     padding-top: 0.625rem;
+    padding-right: 3.45rem;
     padding-bottom: 0.625rem;
     padding-left: 3.45rem;
   }
@@ -57,14 +60,20 @@
   }
 
   &__location {
+    background: yellow;
     img {
+      width: 2.5rem;
+      height: 1.75rem;
     }
     span {
       position: relative;
       font-size: $font-sm;
       color: $black;
-      margin-right: 2rem; //TODO
-      background: yellow;
+      margin-left: 1.125rem; //TODO
+    }
+    i {
+      cursor: pointer;
+      background: red;
     }
   }
 }

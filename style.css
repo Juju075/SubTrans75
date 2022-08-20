@@ -156,7 +156,10 @@ button,
   /*__ Rules modification*/
 }
 .header nav {
+  display: flex;
+  justify-content: space-between;
   padding-top: 0.625rem;
+  padding-right: 3.45rem;
   padding-bottom: 0.625rem;
   padding-left: 3.45rem;
 }
@@ -185,12 +188,22 @@ button,
 .header__links a:not(:last-child) {
   margin-right: 2rem;
 }
+.header__location {
+  background: yellow;
+}
+.header__location img {
+  width: 2.5rem;
+  height: 1.75rem;
+}
 .header__location span {
   position: relative;
   font-size: 0.875rem;
   color: black;
-  margin-right: 2rem;
-  background: yellow;
+  margin-left: 1.125rem;
+}
+.header__location i {
+  cursor: pointer;
+  background: red;
 }
 
 /*# sourceMappingURL=style.css.map */
