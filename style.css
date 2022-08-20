@@ -139,6 +139,8 @@ button,
 
 .flex-direction-r {
   flex-direction: column;
+  display: flex;
+  align-items: center;
   background: blue;
 }
 
@@ -254,11 +256,14 @@ button,
   font-weight: 800;
   display: flex;
   justify-content: center;
-  background: yellow;
 }
 .vehicules___cards {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 3.125rem;
+  max-width: 1110px;
+  justify-content: space-between;
+  background: yellow;
 }
 
 /*# sourceMappingURL=style.css.map */

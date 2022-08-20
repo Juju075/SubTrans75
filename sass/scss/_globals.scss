@@ -143,5 +143,7 @@ button,
 }
 .flex-direction-r {
   flex-direction: column;
+  display: flex;
+  align-items: center;
   background: blue;
 }
