@@ -77,7 +77,6 @@ button,
 **/
 /* 1440px + hyperclass ok*/
 .container {
-  background: red;
   max-width: 90rem;
   margin: auto;
   /*----------  Hyperclass ----------*/
@@ -206,7 +205,7 @@ button,
   cursor: pointer;
 }
 
-.hero__box-text {
+.hero__text-box {
   position: absolute;
   display: flex;
   flex-wrap: wrap;
@@ -217,12 +216,16 @@ button,
   margin-left: 5%;
   color: white;
 }
+.hero__text-box {
+  background: gray;
+}
 .hero__truck-background {
   background: #039b4a;
 }
 .hero__truck-background img {
   /*coller l'image au bord droite*/
-  margin-left: 17.25rem;
+  margin-left: 43.5%;
+  background: magenta;
 }
 
 /* Slide Effect

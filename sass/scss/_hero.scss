@@ -1,5 +1,5 @@
 .hero {
-  &__box-text {
+  &__text-box {
     position: absolute;
     display: flex;
     flex-wrap: wrap;
@@ -11,12 +11,16 @@
     color: white;
   }
 
+  &__text-box {
+    background: gray;
+  }
   &__truck-background {
     background: $greenTruck;
     img {
       //TODO
       /*coller l'image au bord droite*/
-      margin-left: 17.25rem;
+      margin-left: 43.5%;
+      background: magenta;
     }
   }
 }
