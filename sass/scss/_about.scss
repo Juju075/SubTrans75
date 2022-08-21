@@ -24,11 +24,23 @@
       line-height: 18px; /**/
       margin-top: 10px;
     }
+    /* Mozilla navigateur CSS Grid Inspector */
+    /*
+    /*Grid container*/
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-areas:
+        "title"
+        "vehicles customers employees "
+        "sites turnover refrigeration";
+    }
   }
 
   img {
-    /*Responsive image*/
     margin-left: 15px;
     width: 400px;
+    height: 400px;
   }
 }

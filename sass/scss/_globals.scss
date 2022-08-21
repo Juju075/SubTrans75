@@ -20,11 +20,12 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   margin-top: 0px;
-  font-weight: 300; //TODO
   line-height: 1.15; // used to set the distance between lines of text.
   font-size: 2.31rem; //TODO
+  font-weight: 300; //TODO
 }
 
 a,
@@ -77,6 +78,7 @@ button,
 .container {
   max-width: 90rem;
   margin: auto;
+  border: 1px solid red;
 
   /*----------  Hyperclass ----------*/
   &--pall {
