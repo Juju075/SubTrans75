@@ -24,7 +24,6 @@ h3 {
   margin-top: 0px;
   font-weight: 300; //TODO
   line-height: 1.15; // used to set the distance between lines of text.
-  /*color: $darkBlue;*/ //TODO
   font-size: 2.31rem; //TODO
 }
 
@@ -78,6 +77,7 @@ button,
 .container {
   max-width: 90rem;
   margin: auto;
+  background: red;
 
   /*----------  Hyperclass ----------*/
   &--pall {
@@ -135,7 +135,7 @@ button,
     justify-content: space-between;
   }
   &-jc-c {
-    justify-content: space-between;
+    justify-content: center;
   }
   &-ai-c {
     align-content: center;

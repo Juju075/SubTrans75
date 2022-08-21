@@ -27,7 +27,6 @@ h3 {
   margin-top: 0px;
   font-weight: 300;
   line-height: 1.15;
-  /*color: $darkBlue;*/
   font-size: 2.31rem;
 }
 
@@ -79,6 +78,7 @@ button,
 .container {
   max-width: 90rem;
   margin: auto;
+  background: red;
   /*----------  Hyperclass ----------*/
 }
 .container--pall {
@@ -131,7 +131,7 @@ button,
   justify-content: space-between;
 }
 .flex-jc-c {
-  justify-content: space-between;
+  justify-content: center;
 }
 .flex-ai-c {
   align-content: center;
@@ -280,6 +280,29 @@ button,
   margin-left: 10px;
   font-size: 20px;
   font-weight: 300;
+}
+
+.about {
+  /*Spacing conteneur*/
+  margin: 30px 15px 0 15px;
+}
+.about__text {
+  display: block;
+  max-width: 600px;
+  background: yellow;
+}
+.about__text .title {
+  font-size: 35px;
+}
+.about__text .subtitle {
+  font-size: 20px;
+  color: green;
+}
+.about__text .description {
+  font-size: 12px;
+}
+.about__image {
+  background-image: url();
 }
 
 /*# sourceMappingURL=style.css.map */
