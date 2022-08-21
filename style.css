@@ -295,7 +295,7 @@ button,
 .about__text {
   display: block;
   max-width: 700px;
-  background: yellow;
+  margin-right: 15px;
 }
 .about__text .title {
   font-size: 35px;
@@ -311,6 +311,7 @@ button,
 }
 .about img {
   /*Responsive image*/
+  margin-left: 15px;
   width: 400px;
 }
 
