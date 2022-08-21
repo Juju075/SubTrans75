@@ -78,7 +78,6 @@ button,
 .container {
   max-width: 90rem;
   margin: auto;
-  background: red;
   /*----------  Hyperclass ----------*/
 }
 .container--pall {
@@ -135,6 +134,13 @@ button,
 }
 .flex-ai-c {
   align-content: center;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-d-col {
+  flex-direction: column;
+  align-items: center;
 }
 
 .flex-direction-r {
@@ -288,21 +294,24 @@ button,
 }
 .about__text {
   display: block;
-  max-width: 600px;
+  max-width: 700px;
   background: yellow;
 }
 .about__text .title {
   font-size: 35px;
 }
 .about__text .subtitle {
+  margin-top: 10px;
   font-size: 20px;
   color: green;
 }
 .about__text .description {
+  margin-top: 10px;
   font-size: 12px;
 }
-.about__image {
-  background-image: url();
+.about img {
+  /*Responsive image*/
+  width: 400px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -4,22 +4,25 @@
 
   &__text {
     display: block;
-    max-width: 600px;
+    max-width: 700px;
     background: yellow;
 
     .title {
       font-size: 35px;
     }
     .subtitle {
+      margin-top: 10px;
       font-size: 20px;
       color: green;
     }
     .description {
+      margin-top: 10px;
       font-size: 12px;
     }
   }
 
-  &__image {
-    background-image: url();
+  img {
+    /*Responsive image*/
+    width: 400px;
   }
 }

@@ -77,7 +77,6 @@ button,
 .container {
   max-width: 90rem;
   margin: auto;
-  background: red;
 
   /*----------  Hyperclass ----------*/
   &--pall {
@@ -140,7 +139,15 @@ button,
   &-ai-c {
     align-content: center;
   }
+  &-wrap {
+    flex-wrap: wrap;
+  }
+  &-d-col {
+    flex-direction: column;
+    align-items: center;
+  }
 }
+//TODO
 .flex-direction-r {
   flex-direction: column;
   display: flex;
