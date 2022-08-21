@@ -9,13 +9,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-decoration: none;
-  list-style: none;
 }
 
 html {
   font-size: 100%;
-  box-sizing: border-box;
 }
 
 body {
@@ -36,6 +33,12 @@ a,
 a:visited,
 a:hover {
   color: white;
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
 }
 
 /*----------  Buttons  ----------*/
@@ -350,18 +353,40 @@ button,
   font-size: 12px;
 }
 .expertises__title {
+  grid-area: title;
   background: yellow;
 }
 .expertises__title p {
   color: green;
 }
 .expertises__content-hleft {
+  grid-area: hleft;
   /*typo mulish*/
   background: red;
 }
 .expertises__content-hleft h4 {
   font-size: 30px;
   font-weight: 400;
+}
+.expertises__content-bleft {
+  background: gray;
+}
+.expertises img {
+  grid-area: fourgonette;
+  height: 270px;
+  width: 270px;
+}
+.expertises__content-hright {
+  grid-area: hright;
+  background: #5aa528;
+}
+.expertises__content-bright {
+  grid-area: bright;
+  background: green;
+}
+.expertises__lower-text {
+  grid-area: lower-text;
+  background: magenta;
 }
 
 /*# sourceMappingURL=style.css.map */

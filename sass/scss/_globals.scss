@@ -5,13 +5,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-decoration: none;
-  list-style: none;
 }
 
 html {
   font-size: 100%;
-  box-sizing: border-box;
 }
 
 body {
@@ -32,6 +29,12 @@ a,
 a:visited,
 a:hover {
   color: white; //TODO
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
 }
 
 /*----------  Buttons  ----------*/

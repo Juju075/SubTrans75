@@ -13,6 +13,7 @@
   }
 
   &__title {
+    grid-area: title;
     p {
       color: green;
     }
@@ -20,6 +21,7 @@
   }
 
   &__content-hleft {
+    grid-area: hleft;
     /*typo mulish*/
     h4 {
       font-size: 30px;
@@ -27,5 +29,25 @@
     }
 
     background: red;
+  }
+  &__content-bleft {
+    background: gray;
+  }
+  img {
+    grid-area: fourgonette;
+    height: 270px;
+    width: 270px;
+  }
+  &__content-hright {
+    grid-area: hright;
+    background: rgb(90, 165, 40);
+  }
+  &__content-bright {
+    grid-area: bright;
+    background: green;
+  }
+  &__lower-text {
+    grid-area: lower-text;
+    background: magenta;
   }
 }
