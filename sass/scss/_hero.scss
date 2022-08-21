@@ -10,9 +10,17 @@
     margin-left: 5%;
     color: white;
   }
+  &__title {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    line-height: 20px; /**/
+  }
 
-  &__text-box {
-    background: gray;
+  &__description {
+    //TODO
+    /*typo mulish*/
+    font-size: 14px;
+    line-height: 20px; /**/
   }
   &__truck-background {
     background: $greenTruck;
@@ -20,7 +28,6 @@
       //TODO
       /*coller l'image au bord droite*/
       margin-left: 43.5%;
-      background: magenta;
     }
   }
 }

@@ -6,18 +6,6 @@
     background: $greenTruck;
   }
   //TODO
-  /** 
-   * Section Name
-   * > <nav>
-   * >> header__block
-   * >>> header__logo
-   * >>> header__text
-   * >> header__links
-   * >>> <a>
-   * >> header__location
-   * >>> img
-   * >>> span
-   */
 
   nav {
     display: flex;
@@ -42,6 +30,8 @@
 
   &__text {
     display: block;
+    font-family: "Poppins", sans-serif;
+    line-height: 17px;
   }
 
   &__links {
@@ -49,7 +39,8 @@
 
     a {
       position: relative;
-      font-size: $font-med;
+      font-family: "Poppins", sans-serif;
+      font-size: $font-sm;
       font-weight: 400;
       color: $black;
 
@@ -70,6 +61,7 @@
 
     span {
       position: relative;
+      font-family: "Poppins", sans-serif;
       font-size: $font-sm;
       color: $black;
       margin-left: 1.125rem; //TODO

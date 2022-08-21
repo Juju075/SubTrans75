@@ -8,16 +8,21 @@
     margin-right: 15px;
 
     .title {
+      font-family: "Poppins", sans-serif;
       font-size: 35px;
+      line-height: 35px; /**/
     }
     .subtitle {
-      margin-top: 10px;
+      font-family: "Poppins", sans-serif;
       font-size: 20px;
+      line-height: 20px; /**/
+      margin-top: 10px;
       color: green;
     }
     .description {
-      margin-top: 10px;
       font-size: 12px;
+      line-height: 18px; /**/
+      margin-top: 10px;
     }
   }
 
