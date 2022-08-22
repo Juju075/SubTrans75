@@ -6,7 +6,7 @@
     position: relative;
     display: flex;
     width: 100%;
-    background-color: green;
+    background-color: $greenTruck;
 
     /*main title*/
     h4,
@@ -33,22 +33,20 @@
       display: flex;
       width: 50%;
       padding-top: 10%;
-      border: 3px solid magenta;
 
       .bloc-left-coltext {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         padding: 15px;
-        border: 1px solid black;
       }
       .bloc-right-coltext {
         display: flex;
         flex-direction: column;
+        margin: 115px 0 80px 0;
         justify-content: space-around;
 
         padding: 15px;
-        border: 1px solid black;
       }
     }
     /**/
