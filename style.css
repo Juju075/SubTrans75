@@ -500,4 +500,8 @@ button,
   background: gray;
 }
 
+.maps__content-address {
+  position: absolute;
+}
+
 /*# sourceMappingURL=style.css.map */
