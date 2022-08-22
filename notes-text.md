@@ -1,11 +1,5 @@
 ====================================
-For mor information, please don't
-hesitate to get in touch with William
 
-William Racinne - Country Director
-Telephone: +27 72 134 1225
-Email: wracinne@transportsociety.co.za
-Twitter: @WilliamRacinne
 
 ---
 
