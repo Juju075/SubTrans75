@@ -333,7 +333,7 @@ button,
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  grid-template-areas: "title" "vehicles customers employees " "sites turnover refrigeration";
+  grid-template-areas: "title title title" "vehicles customers employees " "sites turnover refrigeration";
 }
 .about img {
   margin-left: 15px;
@@ -343,6 +343,7 @@ button,
 
 .expertises {
   padding-top: 50px;
+  background: green;
   /*GRID*/
   display: grid;
   grid-template-columns: repeat(3, 1fr);

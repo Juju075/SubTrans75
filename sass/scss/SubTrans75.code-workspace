@@ -1,8 +1,13 @@
 {
   "folders": [
-	{
-		"path": "..\\.."
-	}
-],
-  "settings": {}
+    {
+      "path": "..\\.."
+    }
+  ],
+  "settings": {
+    "editor.tokenColorCustomizations": {
+      "comments": "",
+      "textMateRules": []
+    }
+  }
 }
