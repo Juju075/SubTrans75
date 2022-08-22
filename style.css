@@ -398,6 +398,7 @@ button,
   position: relative;
   display: flex;
   width: 100%;
+  background: linear-gradient();
   background-color: #039b4a;
   /*main title*/
   /*title*/
