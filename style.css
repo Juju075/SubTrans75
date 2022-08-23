@@ -502,6 +502,44 @@ button,
 
 .maps__content-address {
   position: absolute;
+  padding: 40px 0 0 30px;
 }
+.maps__content-address .contact {
+  padding: 0 0 20px 20px;
+  background: #e0d8d8;
+  border-bottom: 1px solid gray;
+}
+.maps__content-address .contact span {
+  font-size: 20px;
+  font-weight: bold;
+}
+.maps__content-address .spots {
+  background: white;
+  padding-left: 20px;
+}
+.maps__content-address .spots p {
+  height: 117px;
+  width: 535px;
+  padding-top: 20px;
+  border-bottom: 1px solid gray;
+  color: #000;
+}
+.maps__content-address .spots span {
+  /*Title*/
+  font-size: 20px;
+  font-weight: bold;
+}
+.maps__content-address .spots .chevron-right::after {
+  content: "";
+  margin-left: 50px;
+  display: inline-block;
+  border-left: 2px solid #000;
+  border-bottom: 2px solid #000;
+  width: 10px;
+  height: 10px;
+  transform: rotate(225deg);
+}
+
+/*535 x 468 4 sections*/
 
 /*# sourceMappingURL=style.css.map */
