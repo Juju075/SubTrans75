@@ -7,7 +7,6 @@
       padding-left: 40px;
     }
     .disclaimer {
-      border: 1px solid red;
       display: flex;
       flex-direction: column;
       padding-left: 40px;
@@ -17,6 +16,9 @@
         margin: 10px;
         padding-top: 20px;
         line-height: 20px;
+      }
+      p:last-child {
+        padding-bottom: 20px;
       }
     }
   }

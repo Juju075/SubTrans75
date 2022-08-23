@@ -5,10 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link
       rel="shortcut icon"
       href="./images/favicon-32x32.png"
       type="image/x-icon"
@@ -77,7 +73,7 @@
             Forestier offers a full range of vehicles for hire on a short,
             medium or long-term basis.
           </p>
-          <button>Download our brochure</button>
+          <a href="button" class="button-reference">Download our brochure</a>
         </div>
         <!-- B - 3 element-->
         <div class="hero__truck-background">
@@ -343,10 +339,11 @@
     <!-- =================================================================== -->
     <!-- Section 8/9 | Maps (PHP) -->
     <!-- =================================================================== -->
-    <!--
   <section class="maps">
     <div class="container flex">
-      <iframe src="https://maps.google.com/maps?&q=<?php ?>&output=embeded" frameborder="0" width="100%" height="100%"></iframe>
+      <div id="maps">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d769783.3017549515!2d27.964346562343092!3d-26.329562941505152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9517cba6dd8fbf%3A0x510fb0f8056d38c3!2s99%20Skew%20Rd%2C%20Anderbolt%2C%20Boksburg%2C%201459%2C%20Afrique%20du%20Sud!5e0!3m2!1sfr!2sfr!4v1661289692868!5m2!1sfr!2sfr" width="1440" height="700" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
       <div class="maps__content-address">
         <div class="contact">
           <span>Our agencies in South Africa</span><br>
@@ -354,72 +351,80 @@
           Telephone: +27 67 674 0573
         </div>
         <div class="spots">
-            <p>
-              <span class="chevron-right">Johannesburg</span><br>
-              99 Skew Road, 1459,<br>
-              Boksburg, Gauteng
-            </p>
-            <p>
-              <span class="chevron-right">Durban</span><br>
-              Unit 4b, 50 Moreland Drive, Rinaldo Industrial Park, Redhill<br>
-              4071, Durban, KZN
-            </p>
-            <p>
-              <span class="chevron-right">Cape Town</span><br>
-              111 Kruis Road, Brackenfell,<br>
-              7560, Cape Town, Western Cape
-            </p>
+            <a href="#" id="location1">
+              <p>
+                <span class="chevron-right">Johannesburg</span><br>
+                99 Skew Road, 1459,<br>
+                Boksburg, Gauteng
+              </p>
+            </a>
+            <a href="#" id="location2">
+              <p>
+                <span class="chevron-right">Durban</span><br>
+                Unit 4b, 50 Moreland Drive, Rinaldo Industrial Park, Redhill<br>
+                4071, Durban, KZN
+              </p>
+            </a>
+            <a href="" id="location3">
+              <p>
+                <span class="chevron-right">Cape Town</span><br>
+                111 Kruis Road, Brackenfell,<br>
+                7560, Cape Town, Western Cape
+              </p>
+            </a>
         </div>
       </div>
     </div>
   </section>
-  --> 
     <!-- =================================================================== -->
     <!-- Section 9/9 | Footer -->
     <!-- =================================================================== -->
-<section class="footer">
-  <div class="container flex">
-    <!-- logo -->
-    <div class="footer__row">
-      <div class="logo">
-            <a href="#" class="footer__logo"
-              ><img src="./images/truck_logo.jpg" alt="logo_truck" class="image"
-            /></a>
-            <span class="footer__text"
-              >Transport<br />
-              society</span
-            >
+  <section class="footer">
+    <div class="container flex">
+      <!-- logo -->
+      <div class="footer__row">
+        <div class="logo">
+              <a href="#" class="footer__logo"
+                ><img src="./images/truck_logo.jpg" alt="logo_truck" class="image"
+              /></a>
+              <span class="footer__text"
+                >Transport<br />
+                society</span
+              >
+        </div>
+        <!-- disclaimer -->
+        <div class="disclaimer">
+          <p>*Les informations que nous collectons via ce formulaire font l'objet d'un traitement informatique dont la finalité est de pouvoir répondre à votre demande d'information.</p>
+          <p>
+            Les destinataires des données sont les services marketing et commercial du groupe Transport society
+            Conformément à la loi du 6 janvier 1978 relative à l'informatique, aux fichiers et aux libertés, modifiés par la loi du 20 juin 2018 et au Règlement de l'Union européenne n2016/679 relatif à la protection des personnes physiques à l'égard du traitement des données à caractère personnel et à la libre circulation des données(RGPD), vous disposez d'un droit d'accès, de rectification, de limitation, d'opposition, de portabilité, de limitation et d'effacement des informations qui vous concernent - en envoyant un courrier à dpo@transportsociety.com accompagné d'une copie d'une pièce d'identité valide.
+          </p>
+          <p>En soumettant ce formulaire, vous acceptez notre politique de confidentialité.</p>
+        </div>
       </div>
-      <!-- disclaimer -->
-      <div class="disclaimer">
-        <p>Les informations que nous collectons via ce formulaire font l'objet d'un traitement informatique dont la finalité est de pouvoir répondre à votre demande d'information.</p>
-        <p>
-          Les destinataires des données sont les services marketing et commercial du groupe Transport society
-          Conformément à la loi du 6 janvier 1978 relative à l'informatique, aux fichiers et aux libertés, modifiés par la loi du 20 juin 2018 et au Règlement de l'Union européenne n2016/679 relatif à la protection des personnes physiques à l'égard du traitement des données à caractère personnel et à la libre circulation des données(RGPD), vous disposez d'un droit d'accès, de rectification, de limitation, d'opposition, de portabilité, de limitation et d'effacement des informations qui vous concernent - en envoyant un courrier à dpo@transportsociety.com accompagné d'une copie d'une pièce d'identité valide.
-        </p>
-        <p>En soumettant ce formulaire, vous acceptez notre politique de confidentialité.</p>
-      </div>
+
+      
+      
     </div>
-
-    
-    
-  </div>
-</section>
-<!-- =================================================================== -->
-<!-- Section 9 bis/9 | Footer -->
-<!-- =================================================================== -->
-<section class="footer-bis">
-  <div class="container container--pall  container-bg-c-black flex flex-jc-fs">
-    <!-- legal -->
-    <div class="footer-bis__legal">
-      <p>legal notice</p>
-      <p>private policy</p>
-      <p>Transport society</p>
-    </div>  
-  </div>
-  
-</section>
-
+  </section>
+    <!-- =================================================================== -->
+    <!-- Section 9 bis/9 | Footer -->
+    <!-- =================================================================== -->
+    <section class="footer-bis">
+      <div class="container container--pall  container-bg-c-black flex flex-jc-fs">
+        <!-- legal -->
+        <div class="footer-bis__legal">
+          <a href="#">
+            <p>legal notice</p>
+          </a>
+          <a href="#">
+            <p>private policy</p>
+          </a>
+          <p>Transport society</p>
+        </div>  
+      </div>
+      
+    </section>
     <!-- =================================================================== -->
     <!-- Section 10/9 | Builder -->
     <!-- =================================================================== -->                

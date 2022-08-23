@@ -42,16 +42,49 @@ button,
 .button {
   //TODO
   display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 1rem 0;
   padding: 0;
-  background: white;
-  border-radius: 0px;
+  border-radius: 0;
   border: 0;
-  color: black;
+  /*transition: opacity 300ms ease-in-out;*/
+  transition: background-color 0.25s ease-out, color 0.25s ease-out;
+  /*font-family: inherit;*/
   font-weight: 100;
   font-size: $font-sm;
-  transition: opacity 300ms ease-in-out;
+  line-height: 1;
+  text-align: center;
   cursor: pointer;
+  background-color: white;
+  color: black;
 }
+
+.button.green {
+  background-color: #039f4e;
+  color: #fefefe;
+}
+
+.button_reference {
+  display: inline-block; /*ok*/
+  vertical-align: middle;
+  margin: 0 0 1rem 0;
+  padding: 0.85em 1em;
+
+  border: 1px solid transparent;
+
+  border-radius: 0; /*ok*/
+
+  transition: background-color 0.25s ease-out, color 0.25s ease-out;
+  font-family: inherit;
+  font-size: 0.9rem; /* other ok*/
+  -webkit-appearance: none;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer; /*ok*/
+  background-color: #039f4e;
+  color: #fefefe;
+}
+
 /*----------  MediaQueries (Mobile First) ----------*/
 .hide-for-mobile {
   //hide for mobile and tablet button menu
