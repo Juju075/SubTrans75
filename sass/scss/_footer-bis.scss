@@ -1,0 +1,10 @@
+.footer-bis {
+  color: white;
+  /* */
+  &__legal {
+    display: flex;
+    p {
+      padding-left: 30px;
+    }
+  }
+}

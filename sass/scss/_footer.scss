@@ -1,0 +1,23 @@
+.footer {
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    .logo {
+      padding-top: 35px;
+      padding-left: 40px;
+    }
+    .disclaimer {
+      border: 1px solid red;
+      display: flex;
+      flex-direction: column;
+      padding-left: 40px;
+      padding-right: 40px;
+      p {
+        font-size: 15px;
+        margin: 10px;
+        padding-top: 20px;
+        line-height: 20px;
+      }
+    }
+  }
+}
