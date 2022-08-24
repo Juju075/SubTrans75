@@ -1,15 +1,31 @@
 .expertises {
-  margin: 3.125rem 10% 0 10%;
+  margin: 3.125rem 10% 0 20%;
   display: grid;
   min-width: 0;
   min-height: 0;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, 1fr);
+
   grid-template-areas:
     "title title title"
     "text1 car text3"
     "text2 car text4"
     "text5 text5 text5";
+
+  /*
+  https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Grid_Layout/Box_Alignment_in_CSS_Grid_Layout
+    Rappel: 
+    bloc/column axis
+    Inline/ row axis
+    L'axe en ligne est orthogonal à l'axe de bloc. 
+    C'est la direction selon laquelle progresse le texte.
+
+    align-items et align-self gèrent l'alignement des objets sur l'axe de bloc. 
+    justify-self permettent quant à eux de gérer l'alignement sur l'axe en ligne
+    
+    texte aligner
+    https://developer.mozilla.org/fr/docs/Web/CSS/text-align
+    */
 
   p {
     font-family: "Poppins", sans-serief;
@@ -18,48 +34,69 @@
   }
 
   &__title {
-    background: red;
+    border: 1px solid red;
     grid-area: title;
+    justify-self: center;
+    //TODO reduire hauteur.
+
     p {
+      text-align: center;
       color: green;
     }
-    p:last-child { 
-      font-size: 22px;
+    p:last-child {
+      padding-top: 10px;
+      font-size: 35px;
       color: black;
     }
   }
   &__text1 {
-    background: yellowgreen;
     grid-area: text1;
+    text-align: end;
+
     p:last-child {
+      padding: 10px;
+      font-weight: normal;
     }
   }
   &__text2 {
-    background: magenta;
     grid-area: text2;
+    text-align: end;
     p:last-child {
+      padding: 10px;
+      font-weight: normal;
     }
   }
   &__car {
-    background: sienna;
+    //TODO centrer l'image
+    border: 1px solid blue;
     grid-area: car;
+    img {
+      justify-content: center;
+    }
   }
   &__text3 {
-    background: green;
     grid-area: text3;
     p:last-child {
+      padding: 10px;
+      font-weight: normal;
     }
   }
   &__text4 {
-    background: teal;
     grid-area: text4;
     p:last-child {
+      padding: 10px;
+      font-weight: normal;
     }
   }
   &__text5 {
-    background: blue;
     grid-area: text5;
+    justify-self: center;
+    p {
+      text-align: center;
+    }
     p:last-child {
+      padding: 10px;
+      font-weight: normal;
     }
   }
 }

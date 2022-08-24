@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*----------  Primary colors  ----------*/
 /*----------  Neutral  ----------*/
 /*----------  Font Sizes  ----------*/
@@ -365,13 +366,27 @@ button,
 }
 
 .expertises {
-  margin: 3.125rem 10% 0 10%;
+  margin: 3.125rem 10% 0 20%;
   display: grid;
   min-width: 0;
   min-height: 0;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, 1fr);
   grid-template-areas: "title title title" "text1 car text3" "text2 car text4" "text5 text5 text5";
+  /*
+  https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Grid_Layout/Box_Alignment_in_CSS_Grid_Layout
+    Rappel: 
+    bloc/column axis
+    Inline/ row axis
+    L'axe en ligne est orthogonal à l'axe de bloc. 
+    C'est la direction selon laquelle progresse le texte.
+
+    align-items et align-self gèrent l'alignement des objets sur l'axe de bloc. 
+    justify-self permettent quant à eux de gérer l'alignement sur l'axe en ligne
+
+    texte aligner
+    https://developer.mozilla.org/fr/docs/Web/CSS/text-align
+    */
 }
 .expertises p {
   font-family: "Poppins", sans-serief;
@@ -379,40 +394,68 @@ button,
   font-weight: bold;
 }
 .expertises__title {
-  background: red;
+  border: 1px solid red;
   grid-area: title;
+  justify-self: center;
 }
 .expertises__title p {
+  text-align: center;
   color: green;
 }
 .expertises__title p:last-child {
-  font-size: 22px;
+  padding-top: 10px;
+  font-size: 35px;
   color: black;
 }
 .expertises__text1 {
-  background: yellowgreen;
   grid-area: text1;
+  text-align: end;
+}
+.expertises__text1 p:last-child {
+  padding: 10px;
+  font-weight: normal;
 }
 .expertises__text2 {
-  background: magenta;
   grid-area: text2;
+  text-align: end;
+}
+.expertises__text2 p:last-child {
+  padding: 10px;
+  font-weight: normal;
 }
 .expertises__car {
-  background: sienna;
+  border: 1px solid blue;
   grid-area: car;
 }
+.expertises__car img {
+  justify-content: center;
+}
 .expertises__text3 {
-  background: green;
   grid-area: text3;
 }
+.expertises__text3 p:last-child {
+  padding: 10px;
+  font-weight: normal;
+}
 .expertises__text4 {
-  background: teal;
   grid-area: text4;
 }
-.expertises__text5 {
-  background: blue;
-  grid-area: text5;
+.expertises__text4 p:last-child {
+  padding: 10px;
+  font-weight: normal;
 }
+.expertises__text5 {
+  grid-area: text5;
+  justify-self: center;
+}
+.expertises__text5 p {
+  text-align: center;
+}
+.expertises__text5 p:last-child {
+  padding: 10px;
+  font-weight: normal;
+}
+
 .services {
   margin-top: 50px;
   color: white;
