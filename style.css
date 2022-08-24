@@ -55,7 +55,8 @@ button,
   transition: background-color 0.25s ease-out, color 0.25s ease-out;
   /*font-family: inherit;*/
   font-weight: 100;
-  font-size: 0.875rem;
+  font-size: 14px;
+  /*font-weight: normal;*/
   line-height: 1;
   text-align: center;
   cursor: pointer;
@@ -364,52 +365,46 @@ button,
 }
 
 .expertises {
-  padding-top: 50px;
-  background: green;
-  /*GRID*/
+  background: gray;
   display: grid;
+  min-width: 0;
+  min-height: 0;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, 1fr);
-  grid-template-areas: "title title title title" "hleft fourgonette hright" "bleft fourgonette bright" "lower-text lower-text lower-text";
-}
-.expertises p {
-  font-size: 12px;
+  grid-template-areas: "title title title" "text1 car text3" "text2 car text4" "text5 text5 text5";
 }
 .expertises__title {
-  grid-area: title;
-  background: yellow;
-}
-.expertises__title p {
-  color: green;
-}
-.expertises__content-hleft {
-  grid-area: hleft;
-  /*typo mulish*/
   background: red;
+  grid-area: title;
+  min-width: 0;
+  min-height: 0;
 }
-.expertises__content-hleft h4 {
-  font-size: 30px;
-  font-weight: 400;
+.expertises__text1 {
+  background: yellowgreen;
+  grid-area: text1;
+  min-width: 0;
+  min-height: 0;
 }
-.expertises__content-bleft {
-  background: gray;
-}
-.expertises img {
-  grid-area: fourgonette;
-  height: 270px;
-  width: 270px;
-}
-.expertises__content-hright {
-  grid-area: hright;
-  background: #5aa528;
-}
-.expertises__content-bright {
-  grid-area: bright;
-  background: green;
-}
-.expertises__lower-text {
-  grid-area: lower-text;
+.expertises__text2 {
   background: magenta;
+  grid-area: text2;
+}
+.expertises__car {
+  background: sienna;
+  border: 2px solid red;
+  grid-area: car;
+}
+.expertises__text3 {
+  background: green;
+  grid-area: text3;
+}
+.expertises__text4 {
+  background: teal;
+  grid-area: text4;
+}
+.expertises__text5 {
+  background: blue;
+  grid-area: text5;
 }
 
 .services {
