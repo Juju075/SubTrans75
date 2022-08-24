@@ -170,6 +170,11 @@ button,
 .flex-jc-fs {
   justify-content: flex-start;
 }
+@media screen and (max-width: 1023px) {
+  .flex-jc-fs {
+    justify-content: center;
+  }
+}
 .flex-ai-c {
   align-content: center;
 }
@@ -229,7 +234,6 @@ button,
 }
 .header__links {
   display: flex;
-  /* Tablette */
 }
 @media screen and (max-width: 1023px) {
   .header__links {
@@ -320,6 +324,11 @@ button,
   font-family: poppins;
   font-weight: normal;
   justify-content: space-between;
+}
+@media screen and (max-width: 1023px) {
+  .vehicules__frame {
+    max-width: 700px;
+  }
 }
 .vehicules__card {
   margin: 25px 0 25px 0;
@@ -432,8 +441,16 @@ button,
 }
 .about img {
   margin-left: 0.9375rem;
-  width: 25rem;
+  width: 27.125rem;
   height: 25rem;
+  background-image: url("/images/truck_driver.JPG");
+}
+@media screen and (max-width: 1023px) {
+  .about img {
+    background-image: url("/images/truck_driver2.jpg");
+    background-repeat: no-repeat;
+    width: 10.875rem;
+  }
 }
 
 .expertises {
@@ -537,6 +554,11 @@ button,
 }
 .services__contents img {
   width: 50%;
+}
+@media screen and (max-width: 1023px) {
+  .services__contents img {
+    display: none;
+  }
 }
 .services__contents .grid-container {
   display: grid;
@@ -693,6 +715,11 @@ button,
   position: absolute;
   padding: 40px 0 0 30px;
 }
+@media screen and (max-width: 1023px) {
+  .maps__content-address {
+    max-width: 320px;
+  }
+}
 .maps__content-address .contact {
   font-family: "Mulish", sans-serif;
   padding: 0 0 20px 20px;
@@ -716,6 +743,11 @@ button,
   border-bottom: 1px solid gray;
   color: #000;
 }
+@media screen and (max-width: 1023px) {
+  .maps__content-address .spots p {
+    max-width: 15.625rem;
+  }
+}
 .maps__content-address .spots span {
   /*Title*/
   font-family: "Poppins", sans-serif;
@@ -731,6 +763,11 @@ button,
   width: 0.625rem;
   height: 0.625rem;
   transform: rotate(225deg);
+}
+@media screen and (max-width: 1023px) {
+  .maps__content-address .spots .chevron-right::after {
+    margin-left: 30px;
+  }
 }
 
 /*Responsive maps */

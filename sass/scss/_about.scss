@@ -95,7 +95,13 @@
 
   img {
     margin-left: 0.9375rem;
-    width: 25rem;
+    width: 27.125rem;
     height: 25rem;
+    background-image: url("/images/truck_driver.JPG");
+    @media screen and (max-width: 1023px) {
+      background-image: url("/images/truck_driver2.jpg");
+      background-repeat: no-repeat;
+      width: 10.875rem;
+    }
   }
 }

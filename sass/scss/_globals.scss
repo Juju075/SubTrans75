@@ -171,6 +171,9 @@ button,
   }
   &-jc-fs {
     justify-content: flex-start;
+    @media screen and (max-width: 1023px) {
+      justify-content: center;
+    }
   }
   &-ai-c {
     align-content: center;

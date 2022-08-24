@@ -2,11 +2,16 @@
   &__content-address {
     position: absolute;
     padding: 40px 0 0 30px;
+    @media screen and (max-width: 1023px) {
+      max-width: 320px;
+    }
+
     .contact {
       font-family: "Mulish", sans-serif;
       padding: 0 0 20px 20px;
       background: rgb(224, 216, 216);
       border-bottom: 1px solid gray;
+
       span {
         font-family: "Poppins", sans-serif;
         font-size: 1.25rem;
@@ -25,6 +30,9 @@
         padding-top: 0.625rem;
         border-bottom: 1px solid gray;
         color: #000;
+        @media screen and (max-width: 1023px) {
+          max-width: 15.625rem;
+        }
       }
       span {
         /*Title*/
@@ -41,6 +49,10 @@
         width: 0.625rem;
         height: 0.625rem;
         transform: rotate(225deg);
+
+        @media screen and (max-width: 1023px) {
+          margin-left: 30px;
+        }
       }
     }
   }
