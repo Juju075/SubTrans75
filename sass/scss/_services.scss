@@ -2,55 +2,59 @@
   margin-top: 50px;
   color: white;
 
-  &__bloc-conteneur {
+  &__contents {
+    border: 1px solid red;
     position: relative;
     display: flex;
     width: 100%;
     background: linear-gradient(0deg, $greenTruck 89.3%, white 70%);
-
-    h4,
-    h6 {
-      font-family: poppins;
-      font-weight: 500;
-    }
-    h4 {
-      font-size: 46px;
-    }
-    /*title*/
-    h6 {
-      font-size: 25px;
-    }
-    p {
-      font-size: 16px;
-      line-height: 18px;
-    }
     img {
       width: 50%;
     }
+    .grid-container {
+      background: red;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      grid-template-areas:
+        "title title"
+        "opening maintenance"
+        "parts repairs"
+        "support customisation"
+        "button button";
 
-    .bloc-text {
-      display: flex;
-      width: 50%;
-      padding-top: 10%;
-
-      .bloc-left-coltext {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding: 15px;
+      .title {
+        background: yellow;
+        grid-area: title;
       }
-      .bloc-right-coltext {
-        display: flex;
-        flex-direction: column;
-        margin: 115px 0 80px 0;
-        justify-content: space-around;
-
-        padding: 15px;
+      .opening {
+        background: blue;
+        grid-area: opening;
       }
-    }
-    /**/
-    .bloc-text::after {
-      padding-bottom: 100%;
+      .maintenance {
+        background: magenta;
+        grid-area: maintenance;
+      }
+      .parts {
+        background: teal;
+        grid-area: parts;
+      }
+      .repairs {
+        background: turquoise;
+        grid-area: repairs;
+      }
+      .support {
+        background: green;
+        grid-area: support;
+      }
+      .customisation {
+        background: rebeccapurple;
+        grid-area: customisation;
+      }
+      .button {
+        background: seagreen;
+        grid-area: button;
+      }
     }
   }
 }

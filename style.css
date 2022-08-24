@@ -326,6 +326,7 @@ button,
   margin: 30px 15px 0 15px;
 }
 .about__text {
+  border: 1px solid red;
   display: block;
   max-width: 43.75rem;
   margin-right: 0.9375rem;
@@ -510,52 +511,54 @@ button,
   margin-top: 50px;
   color: white;
 }
-.services__bloc-conteneur {
+.services__contents {
+  border: 1px solid red;
   position: relative;
   display: flex;
   width: 100%;
   background: linear-gradient(0deg, #039b4a 89.3%, white 70%);
-  /*title*/
-  /**/
 }
-.services__bloc-conteneur h4,
-.services__bloc-conteneur h6 {
-  font-family: poppins;
-  font-weight: 500;
-}
-.services__bloc-conteneur h4 {
-  font-size: 46px;
-}
-.services__bloc-conteneur h6 {
-  font-size: 25px;
-}
-.services__bloc-conteneur p {
-  font-size: 16px;
-  line-height: 18px;
-}
-.services__bloc-conteneur img {
+.services__contents img {
   width: 50%;
 }
-.services__bloc-conteneur .bloc-text {
-  display: flex;
-  width: 50%;
-  padding-top: 10%;
+.services__contents .grid-container {
+  background: red;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: "title title" "opening maintenance" "parts repairs" "support customisation" "button button";
 }
-.services__bloc-conteneur .bloc-text .bloc-left-coltext {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 15px;
+.services__contents .grid-container .title {
+  background: yellow;
+  grid-area: title;
 }
-.services__bloc-conteneur .bloc-text .bloc-right-coltext {
-  display: flex;
-  flex-direction: column;
-  margin: 115px 0 80px 0;
-  justify-content: space-around;
-  padding: 15px;
+.services__contents .grid-container .opening {
+  background: blue;
+  grid-area: opening;
 }
-.services__bloc-conteneur .bloc-text::after {
-  padding-bottom: 100%;
+.services__contents .grid-container .maintenance {
+  background: magenta;
+  grid-area: maintenance;
+}
+.services__contents .grid-container .parts {
+  background: teal;
+  grid-area: parts;
+}
+.services__contents .grid-container .repairs {
+  background: turquoise;
+  grid-area: repairs;
+}
+.services__contents .grid-container .support {
+  background: green;
+  grid-area: support;
+}
+.services__contents .grid-container .customisation {
+  background: rebeccapurple;
+  grid-area: customisation;
+}
+.services__contents .grid-container .button {
+  background: seagreen;
+  grid-area: button;
 }
 
 .contact__left-bloc {
