@@ -11,16 +11,22 @@
     color: white;
   }
   &__title {
-    font-family: "Poppins", sans-serif;
-    font-size: 14px;
-    line-height: 20px; /**/
+    padding-top: 30px;
+    padding-left: 30px;
+
+    h2 {
+      min-width: 400px;
+      font-family: "Poppins", sans-serif;
+      font-size: 1.875rem;
+      font-weight: bold;
+      line-height: 2.1875rem;
+    }
   }
 
   &__description {
-    //TODO
-    /*typo mulish*/
-    font-size: 14px;
-    line-height: 20px; /**/
+    font-family: "Mulish", sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
   &__truck-background {
     background: $greenTruck;
@@ -31,17 +37,3 @@
     }
   }
 }
-
-/* Slide Effect
-#record {
-  -webkit-transition: left 0.5s ease-out; 
-     -moz-transition: left 0.5s ease-out; 
-      -ms-transition: left 0.5s ease-out; 
-       -o-transition: left 0.5s ease-out; 
-          transition: left 0.5s ease-out;
-}
-
-#container:hover #record {
-    left: 100px;  
-}
-*/

@@ -8,35 +8,35 @@
       background: rgb(224, 216, 216);
       border-bottom: 1px solid gray;
       span {
-        font-size: 20px;
+        font-size: 1.25rem;
         font-weight: bold;
       }
     }
 
     .spots {
       background: white;
-      padding-left: 20px;
+      padding-left: 1.25rem;
 
       p {
-        height: 117px;
-        width: 535px;
-        padding-top: 20px;
+        height: 7.3125rem;
+        width: 33.4375rem;
+        padding-top: 1.25rem;
         border-bottom: 1px solid gray;
         color: #000;
       }
       span {
         /*Title*/
-        font-size: 20px;
+        font-size: 1.25rem;
         font-weight: bold;
       }
       .chevron-right::after {
         content: "";
-        margin-left: 500px;
+        margin-left: 31.25rem;
         display: inline-block;
         border-left: 2px solid #000;
         border-bottom: 2px solid #000;
-        width: 10px;
-        height: 10px;
+        width: 0.625rem;
+        height: 0.625rem;
         transform: rotate(225deg);
       }
     }

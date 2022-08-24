@@ -3,22 +3,27 @@
     display: flex;
     justify-content: space-between;
     .logo {
-      padding-top: 35px;
-      padding-left: 40px;
+      padding-top: 2.1875rem;
+      padding-left: 2.5rem;
+      span {
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+      }
     }
     .disclaimer {
       display: flex;
       flex-direction: column;
-      padding-left: 40px;
-      padding-right: 40px;
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
       p {
-        font-size: 15px;
-        margin: 10px;
-        padding-top: 20px;
-        line-height: 20px;
+        font-family: "Mulish", sans-serif;
+        font-size: 0.9375rem;
+        margin: 0.625rem;
+        padding-top: 1.25rem;
+        line-height: 1.25rem;
       }
       p:last-child {
-        padding-bottom: 20px;
+        padding-bottom: 1.25rem;
       }
     }
   }

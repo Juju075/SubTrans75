@@ -3,6 +3,7 @@
 /*----------  Font Sizes  ----------*/
 /*----------  Font Weight  ----------*/
 @import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Mulish:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 /*----------  Mobile max approach  ----------*/
 /*----------  Desktop min approach  ----------*/
 * {
@@ -257,16 +258,20 @@ button,
   color: white;
 }
 .hero__title {
+  padding-top: 30px;
+  padding-left: 30px;
+}
+.hero__title h2 {
+  min-width: 400px;
   font-family: "Poppins", sans-serif;
-  font-size: 14px;
-  line-height: 20px;
-  /**/
+  font-size: 1.875rem;
+  font-weight: bold;
+  line-height: 2.1875rem;
 }
 .hero__description {
-  /*typo mulish*/
-  font-size: 14px;
-  line-height: 20px;
-  /**/
+  font-family: "Mulish", sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 .hero__truck-background {
   background: #039b4a;
@@ -276,36 +281,22 @@ button,
   margin-left: 43.5%;
 }
 
-/* Slide Effect
-#record {
-  -webkit-transition: left 0.5s ease-out; 
-     -moz-transition: left 0.5s ease-out; 
-      -ms-transition: left 0.5s ease-out; 
-       -o-transition: left 0.5s ease-out; 
-          transition: left 0.5s ease-out;
-}
-
-#container:hover #record {
-    left: 100px;  
-}
-*/
 .vehicules {
-  margin-top: 100px;
+  margin-top: 6.25rem;
 }
 .vehicules__title {
   display: flex;
   justify-content: center;
   font-family: "Poppins", sans-serif;
-  font-size: 50px;
+  font-size: 3.125rem;
   font-weight: 800;
-  line-height: 20px;
-  /**/
+  line-height: 1.25rem;
 }
 .vehicules__frame {
   display: flex;
   flex-wrap: wrap;
   margin-top: 3.125rem;
-  max-width: 1110px;
+  max-width: 69.375rem;
   font-family: poppins;
   font-weight: normal;
   justify-content: space-between;
@@ -318,48 +309,47 @@ button,
   box-shadow: 5px 9px 22px 4px rgba(0, 0, 0, 0.36);
 }
 .vehicules__card img {
-  height: 139px;
-  width: 305px;
+  height: 8.6875rem;
+  width: 19.0625rem;
   border-radius: 10px 10px 0 0;
 }
 .vehicules .model {
-  padding-left: 20px;
-  font-size: 20px;
-  height: 60px;
+  padding-left: 1.25rem;
+  font-size: 1.25rem;
+  height: 3.75rem;
   font-weight: bold;
 }
 
 .about {
-  /*Spacing conteneur*/
   margin: 30px 15px 0 15px;
 }
 .about__text {
   display: block;
-  max-width: 700px;
-  margin-right: 15px;
+  max-width: 43.75rem;
+  margin-right: 0.9375rem;
   /* Mozilla navigateur CSS Grid Inspector */
   /*
   /*Grid container*/
 }
 .about__text .title {
   font-family: "Poppins", sans-serif;
-  font-size: 35px;
-  line-height: 35px;
+  font-size: 2.1875rem;
+  line-height: 2.1875rem;
   /**/
 }
 .about__text .subtitle {
   font-family: "Poppins", sans-serif;
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 1.25rem;
+  line-height: 1.25rem;
   /**/
-  margin-top: 10px;
+  margin-top: 0.625rem;
   color: green;
 }
 .about__text .description {
-  font-size: 12px;
-  line-height: 18px;
+  font-size: 0.75rem;
+  line-height: 1.125rem;
   /**/
-  margin-top: 10px;
+  margin-top: 0.625rem;
 }
 .about__text .grid-container {
   display: grid;
@@ -368,9 +358,9 @@ button,
   grid-template-areas: "title title title" "vehicles customers employees " "sites turnover refrigeration";
 }
 .about img {
-  margin-left: 15px;
-  width: 400px;
-  height: 400px;
+  margin-left: 0.9375rem;
+  width: 25rem;
+  height: 25rem;
 }
 
 .expertises {
@@ -481,27 +471,25 @@ button,
   border: 1px solid green;
 }
 .contact__right-bloc {
-  background: green;
   /* GRID */
 }
 .contact__right-bloc .wrapper {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 30px;
-  gap: 30px;
-  background: green;
+  grid-gap: 1.875rem;
+  gap: 1.875rem;
 }
 .contact__right-bloc .wrapper .box {
   width: 100%;
   position: relative;
-  padding: 20px;
+  padding: 1.25rem;
   /*Input*/
   /*Label*/
 }
 .contact__right-bloc .wrapper .box input {
   width: 100%;
-  font-size: 20px;
+  font-size: 1.25rem;
   background: transparent;
   border: none;
   outline: none;
@@ -515,12 +503,12 @@ button,
 .contact__right-bloc .wrapper .box .wrapper .box input:valid {
   padding: 20px 10px;
   background: turquoise;
-  margin-top: 10px;
+  margin-top: 0.625rem;
 }
 .contact__right-bloc .wrapper .box label {
   top: 0;
   left: 0;
-  color: #fff;
+  color: black;
   font-size: 18px;
   font-weight: bold;
   padding: 20px;
@@ -542,33 +530,33 @@ button,
   border-bottom: 1px solid gray;
 }
 .maps__content-address .contact span {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: bold;
 }
 .maps__content-address .spots {
   background: white;
-  padding-left: 20px;
+  padding-left: 1.25rem;
 }
 .maps__content-address .spots p {
-  height: 117px;
-  width: 535px;
-  padding-top: 20px;
+  height: 7.3125rem;
+  width: 33.4375rem;
+  padding-top: 1.25rem;
   border-bottom: 1px solid gray;
   color: #000;
 }
 .maps__content-address .spots span {
   /*Title*/
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: bold;
 }
 .maps__content-address .spots .chevron-right::after {
   content: "";
-  margin-left: 500px;
+  margin-left: 31.25rem;
   display: inline-block;
   border-left: 2px solid #000;
   border-bottom: 2px solid #000;
-  width: 10px;
-  height: 10px;
+  width: 0.625rem;
+  height: 0.625rem;
   transform: rotate(225deg);
 }
 
@@ -592,23 +580,28 @@ button,
   justify-content: space-between;
 }
 .footer__row .logo {
-  padding-top: 35px;
-  padding-left: 40px;
+  padding-top: 2.1875rem;
+  padding-left: 2.5rem;
+}
+.footer__row .logo span {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
 }
 .footer__row .disclaimer {
   display: flex;
   flex-direction: column;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 .footer__row .disclaimer p {
-  font-size: 15px;
-  margin: 10px;
-  padding-top: 20px;
-  line-height: 20px;
+  font-family: "Mulish", sans-serif;
+  font-size: 0.9375rem;
+  margin: 0.625rem;
+  padding-top: 1.25rem;
+  line-height: 1.25rem;
 }
 .footer__row .disclaimer p:last-child {
-  padding-bottom: 20px;
+  padding-bottom: 1.25rem;
 }
 
 .footer-bis {
@@ -620,7 +613,9 @@ button,
   align-items: center;
 }
 .footer-bis__legal p {
-  padding-left: 30px;
+  font-family: "Mulish", sans-serif;
+  font-weight: normal;
+  padding-left: 1.875rem;
 }
 
 .builder {

@@ -1,20 +1,20 @@
 .vehicules {
-  margin-top: 100px;
+  margin-top: 6.25rem;
 
   &__title {
     display: flex;
     justify-content: center;
     font-family: "Poppins", sans-serif;
-    font-size: 50px;
+    font-size: 3.125rem;
     font-weight: 800;
-    line-height: 20px; /**/
+    line-height: 1.25rem;
   }
 
   &__frame {
     display: flex;
     flex-wrap: wrap;
     margin-top: 3.125rem;
-    max-width: 1110px;
+    max-width: 69.375rem;
     font-family: poppins;
     font-weight: normal;
     justify-content: space-between;
@@ -26,15 +26,15 @@
     -webkit-box-shadow: 5px 9px 22px 4px rgba(0, 0, 0, 0.36);
     box-shadow: 5px 9px 22px 4px rgba(0, 0, 0, 0.36);
     img {
-      height: 139px;
-      width: 305px;
+      height: 8.6875rem;
+      width: 19.0625rem;
       border-radius: 10px 10px 0 0;
     }
   }
   .model {
-    padding-left: 20px;
-    font-size: 20px;
-    height: 60px;
-    font-weight: bold; //TODO
+    padding-left: 1.25rem;
+    font-size: 1.25rem;
+    height: 3.75rem;
+    font-weight: bold;
   }
 }
