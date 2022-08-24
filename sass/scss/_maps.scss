@@ -1,13 +1,14 @@
 .maps {
   &__content-address {
     position: absolute;
-
     padding: 40px 0 0 30px;
     .contact {
+      font-family: "Mulish", sans-serif;
       padding: 0 0 20px 20px;
       background: rgb(224, 216, 216);
       border-bottom: 1px solid gray;
       span {
+        font-family: "Poppins", sans-serif;
         font-size: 1.25rem;
         font-weight: bold;
       }
@@ -18,14 +19,16 @@
       padding-left: 1.25rem;
 
       p {
+        font-family: "Mulish", sans-serif;
         height: 7.3125rem;
         width: 33.4375rem;
-        padding-top: 1.25rem;
+        padding-top: 0.625rem;
         border-bottom: 1px solid gray;
         color: #000;
       }
       span {
         /*Title*/
+        font-family: "Poppins", sans-serif;
         font-size: 1.25rem;
         font-weight: bold;
       }
@@ -43,6 +46,7 @@
   }
 }
 
+/*Responsive maps */
 .map-responsive {
   overflow: hidden;
   padding-bottom: 56.25%;
