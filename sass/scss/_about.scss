@@ -2,24 +2,26 @@
   margin: 30px 15px 0 15px;
 
   &__text {
-    border: 1px solid red;
     display: block;
     max-width: 43.75rem;
     margin-right: 0.9375rem;
 
     .title {
       font-family: "Poppins", sans-serif;
-      font-size: 2.1875rem;
+      font-size: 30px;
+      font-weight: bold;
       line-height: 2.1875rem;
     }
     .subtitle {
       font-family: "Poppins", sans-serif;
-      font-size: 1.25rem;
+      font-size: 0.875rem;
+      font-weight: bold;
       line-height: 1.25rem;
       margin-top: 0.625rem;
       color: green;
     }
     .description {
+      font-family: "Mulish", sans-serif;
       font-size: 0.75rem;
       line-height: 1.125rem;
       margin-top: 0.625rem;

@@ -165,6 +165,9 @@ button,
 .flex-jc-sb {
   justify-content: space-between;
 }
+.flex-jc-sa {
+  justify-content: space-around;
+}
 .flex-jc-c {
   justify-content: center;
 }
@@ -253,24 +256,25 @@ button,
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-  width: 17.25rem;
-  padding: 0.9375rem;
+  width: 500px;
+  padding: 70px 0 0 30px;
   margin-left: 5%;
   color: white;
 }
 .hero__title {
   padding-top: 30px;
-  padding-left: 30px;
 }
-.hero__title h2 {
-  min-width: 400px;
+.hero__title p {
   font-family: "Poppins", sans-serif;
-  font-size: 1.875rem;
+  font-size: 45px;
   font-weight: bold;
   line-height: 2.1875rem;
 }
+.hero__title p:last-child {
+  padding-top: 30px;
+}
 .hero__description {
+  padding-top: 1.25rem;
   font-family: "Mulish", sans-serif;
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -326,7 +330,6 @@ button,
   margin: 30px 15px 0 15px;
 }
 .about__text {
-  border: 1px solid red;
   display: block;
   max-width: 43.75rem;
   margin-right: 0.9375rem;
@@ -336,17 +339,20 @@ button,
 }
 .about__text .title {
   font-family: "Poppins", sans-serif;
-  font-size: 2.1875rem;
+  font-size: 30px;
+  font-weight: bold;
   line-height: 2.1875rem;
 }
 .about__text .subtitle {
   font-family: "Poppins", sans-serif;
-  font-size: 1.25rem;
+  font-size: 0.875rem;
+  font-weight: bold;
   line-height: 1.25rem;
   margin-top: 0.625rem;
   color: green;
 }
 .about__text .description {
+  font-family: "Mulish", sans-serif;
   font-size: 0.75rem;
   line-height: 1.125rem;
   margin-top: 0.625rem;
@@ -419,8 +425,6 @@ button,
 .expertises {
   margin: 3.125rem 10% 0 20%;
   display: grid;
-  min-width: 0;
-  min-height: 0;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, 1fr);
   grid-template-areas: "title title title" "text1 car text3" "text2 car text4" "text5 text5 text5";
@@ -512,7 +516,6 @@ button,
   color: white;
 }
 .services__contents {
-  border: 1px solid red;
   position: relative;
   display: flex;
   width: 100%;
@@ -522,43 +525,81 @@ button,
   width: 50%;
 }
 .services__contents .grid-container {
-  background: red;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, 1fr);
   grid-template-areas: "title title" "opening maintenance" "parts repairs" "support customisation" "button button";
 }
+.services__contents .grid-container p {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 20px;
+  padding: 14px 0 0 20px;
+}
 .services__contents .grid-container .title {
-  background: yellow;
+  padding-top: 140px;
   grid-area: title;
 }
+.services__contents .grid-container .title p {
+  font-size: 50px;
+}
 .services__contents .grid-container .opening {
-  background: blue;
   grid-area: opening;
 }
+.services__contents .grid-container .opening p:last-child {
+  font-family: "Mulish", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+}
 .services__contents .grid-container .maintenance {
-  background: magenta;
   grid-area: maintenance;
 }
+.services__contents .grid-container .maintenance p:last-child {
+  font-family: "Mulish", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+}
 .services__contents .grid-container .parts {
-  background: teal;
   grid-area: parts;
 }
+.services__contents .grid-container .parts p:last-child {
+  font-family: "Mulish", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+}
 .services__contents .grid-container .repairs {
-  background: turquoise;
   grid-area: repairs;
 }
+.services__contents .grid-container .repairs p:last-child {
+  font-family: "Mulish", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+}
 .services__contents .grid-container .support {
-  background: green;
+  border: 1px solid red;
   grid-area: support;
 }
+.services__contents .grid-container .support p:last-child {
+  font-family: "Mulish", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+}
 .services__contents .grid-container .customisation {
-  background: rebeccapurple;
   grid-area: customisation;
 }
+.services__contents .grid-container .customisation p:last-child {
+  font-family: "Mulish", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+}
 .services__contents .grid-container .button {
-  background: seagreen;
+  color: black;
   grid-area: button;
+}
+.services__contents .grid-container .button p:last-child {
+  font-family: "Mulish", sans-serif;
+  font-weight: normal;
 }
 
 .contact__left-bloc {
