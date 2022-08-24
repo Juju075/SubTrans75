@@ -365,7 +365,7 @@ button,
 }
 
 .expertises {
-  background: gray;
+  margin: 3.125rem 10% 0 10%;
   display: grid;
   min-width: 0;
   min-height: 0;
@@ -373,17 +373,25 @@ button,
   grid-template-rows: repeat(4, 1fr);
   grid-template-areas: "title title title" "text1 car text3" "text2 car text4" "text5 text5 text5";
 }
+.expertises p {
+  font-family: "Poppins", sans-serief;
+  font-size: 12px;
+  font-weight: bold;
+}
 .expertises__title {
   background: red;
   grid-area: title;
-  min-width: 0;
-  min-height: 0;
+}
+.expertises__title p {
+  color: green;
+}
+.expertises__title p:last-child {
+  font-size: 22px;
+  color: black;
 }
 .expertises__text1 {
   background: yellowgreen;
   grid-area: text1;
-  min-width: 0;
-  min-height: 0;
 }
 .expertises__text2 {
   background: magenta;
@@ -391,7 +399,6 @@ button,
 }
 .expertises__car {
   background: sienna;
-  border: 2px solid red;
   grid-area: car;
 }
 .expertises__text3 {
@@ -406,7 +413,6 @@ button,
   background: blue;
   grid-area: text5;
 }
-
 .services {
   margin-top: 50px;
   color: white;

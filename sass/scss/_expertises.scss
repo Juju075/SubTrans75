@@ -1,5 +1,5 @@
 .expertises {
-  background: gray;
+  margin: 3.125rem 10% 0 10%;
   display: grid;
   min-width: 0;
   min-height: 0;
@@ -11,37 +11,55 @@
     "text2 car text4"
     "text5 text5 text5";
 
+  p {
+    font-family: "Poppins", sans-serief;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
   &__title {
     background: red;
     grid-area: title;
-    min-width: 0;
-    min-height: 0;
+    p {
+      color: green;
+    }
+    p:last-child { 
+      font-size: 22px;
+      color: black;
+    }
   }
   &__text1 {
     background: yellowgreen;
     grid-area: text1;
-    min-width: 0;
-    min-height: 0;
+    p:last-child {
+    }
   }
   &__text2 {
     background: magenta;
     grid-area: text2;
+    p:last-child {
+    }
   }
   &__car {
     background: sienna;
-    border: 2px solid red;
     grid-area: car;
   }
   &__text3 {
     background: green;
     grid-area: text3;
+    p:last-child {
+    }
   }
   &__text4 {
     background: teal;
     grid-area: text4;
+    p:last-child {
+    }
   }
   &__text5 {
     background: blue;
     grid-area: text5;
+    p:last-child {
+    }
   }
 }
