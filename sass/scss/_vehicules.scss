@@ -15,10 +15,11 @@
     flex-wrap: wrap;
     margin-top: 3.125rem;
     max-width: 1110px;
+    font-family: poppins;
+    font-weight: normal;
     justify-content: space-between;
   }
   &__card {
-    /*margin-left: 200px;*/
     margin: 25px 0 25px 0;
     background: white;
     border-radius: 10px;
@@ -31,8 +32,9 @@
     }
   }
   .model {
-    margin-left: 10px;
+    padding-left: 20px;
     font-size: 20px;
-    font-weight: 300; //TODO
+    height: 60px;
+    font-weight: bold; //TODO
   }
 }

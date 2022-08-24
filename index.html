@@ -91,24 +91,24 @@
 
         <div class="vehicules__frame">
           <div class="vehicules__card">
-            <img src="./images/truck_model_01.jpg" alt="truck-modle-01" />
+            <img src="./images/truck_model_01.jpg" alt="truck-model-01" />
             <div class="model">UD Trucks Croner<br />PKE250 H30</div>
           </div>
           <div class="vehicules__card">
-            <img src="./images/truck_model_01.jpg" alt="truck-modle-02" />
-            <div class="">UD Trucks Croner<br />PKE250 H30</div>
+            <img src="./images/truck_model_02.jpg" alt="truck-model-02" />
+            <div class="model">Isuzu FTR850</div>
           </div>
           <div class="vehicules__card">
-            <img src="./images/truck_model_01.jpg" alt="truck-modle-03" />
-            <div class="">UD Trucks Croner<br />PKE250 H30</div>
+            <img src="./images/truck_model_03.jpg" alt="truck-model-03" />
+            <div class="model">Isuzu NQR 500</div>
           </div>
           <div class="vehicules__card">
-            <img src="./images/truck_model_01.jpg" alt="truck-modle-04" />
-            <div class="">UD Trucks Croner<br />PKE250 H30</div>
+            <img src="./images/truck_model_04.jpg" alt="truck-model-04" />
+            <div class="model">Toyota Dyna</div>
           </div>
           <div class="vehicules__card">
-            <img src="./images/truck_model_01.jpg" alt="truck-modle-05" />
-            <div class="">UD Trucks Croner<br />PKE250 H30</div>
+            <img src="./images/truck_model_05.jpg" alt="truck-model-05" />
+            <div class="model">Fiat Doblo fourgon</div>
           </div>
         </div>
       </div>
@@ -250,7 +250,7 @@
     <!-- Section 7/9 | ContactForm (Javascript) -->
     <!-- =================================================================== -->
     <section class="contact">
-      <div class="container flex">
+      <div class="container flex container-bg-c-gray">
         <div class="contact__left-bloc">
           <h6>Contact us</h6>
           <div class="trucks">
@@ -275,40 +275,46 @@
             <!-- 2-->
             <div class="wrapper">
               <div class="box">
-                <input type="text" name="firstname" id="firstname">
+                <input type="text" name="firstname" id="firstname" />
                 <label for="firstname">First Name</label>
               </div>
               <div class="box">
-                <input type="text" name="surname" id="surname">
+                <input type="text" name="surname" id="surname" />
                 <label for="surname">Surname</label>
               </div>
             </div>
             <!-- 3-->
             <div class="wrapper">
               <div class="box">
-                <input type="text" name="company" id="company" required>
+                <input type="text" name="company" id="company" required />
                 <label for="company">Company name</label>
               </div>
               <div class="box">
-                <input type="text" name="Job" id="Job" required>
+                <input type="text" name="Job" id="Job" required />
                 <label for="Job">Job title</label>
               </div>
             </div>
             <!-- 4-->
             <div class="wrapper">
               <div class="box">
-                <input type="email" name="email" id="email" required>
+                <input type="email" name="email" id="email" required />
                 <label for="email">Email address</label>
               </div>
             </div>
             <!-- 5-->
             <div class="wrapper">
               <div class="box">
-                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                  required
+                />
                 <label for="phone">Telephone</label>
               </div>
               <div class="box">
-                  <select>
+                <select>
                   <option value="">South Africa</option>
                   <option value="">Country2</option>
                   <option value="">Country3</option>
@@ -319,127 +325,160 @@
             <!-- 6-->
             <div class="wrapper">
               <div class="box">
-                <textarea type="textarea" name="message" id="message" placeholder="Your message" required></textarea>
+                <textarea
+                  name="message"
+                  id="message"
+                  placeholder="Your message"
+                  required
+                ></textarea>
                 <label for="message">Message.</label>
               </div>
             </div>
-             <!-- 7-->
+            <!-- 7-->
             <div class="wrapper">
               <div class="box">
-                <input type="radio" name="info" id="info">
+                <input type="radio" name="info" id="info" />
                 <label for="info">
-                  Tick this box if beyond the response to your request for information you wish to receive other communications from us
-                </label>  
+                  Tick this box if beyond the response to your request for
+                  information you wish to receive other communications from us
+                </label>
               </div>
             </div>
-              <input type="submit" name="" value="Submit" />           
+            <input type="submit" name="submit" value="Submit" />
           </form>
         </div>
+      </div>
     </section>
     <!-- =================================================================== -->
     <!-- Section 8/9 | Maps (PHP) -->
     <!-- =================================================================== -->
-  <section class="maps">
-    <div class="container flex">
-      <div id="maps">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d769783.3017549515!2d27.964346562343092!3d-26.329562941505152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9517cba6dd8fbf%3A0x510fb0f8056d38c3!2s99%20Skew%20Rd%2C%20Anderbolt%2C%20Boksburg%2C%201459%2C%20Afrique%20du%20Sud!5e0!3m2!1sfr!2sfr!4v1661289692868!5m2!1sfr!2sfr" width="1440" height="700" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-      <div class="maps__content-address">
-        <div class="contact">
-          <span>Our agencies in South Africa</span><br>
-          Contact:Jacobus Van Niekerk<br>
-          Telephone: +27 67 674 0573
+    <section class="maps">
+      <div class="container flex">
+        <div id="maps">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d769783.3017549515!2d27.964346562343092!3d-26.329562941505152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9517cba6dd8fbf%3A0x510fb0f8056d38c3!2s99%20Skew%20Rd%2C%20Anderbolt%2C%20Boksburg%2C%201459%2C%20Afrique%20du%20Sud!5e0!3m2!1sfr!2sfr!4v1661289692868!5m2!1sfr!2sfr"
+            width="1440"
+            height="700"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
-        <div class="spots">
+        <div class="maps__content-address">
+          <div class="contact">
+            <span>Our agencies in South Africa</span><br />
+            Contact:Jacobus Van Niekerk<br />
+            Telephone: +27 67 674 0573
+          </div>
+          <div class="spots">
             <a href="#" id="location1">
               <p>
-                <span class="chevron-right">Johannesburg</span><br>
-                99 Skew Road, 1459,<br>
+                <span class="chevron-right">Johannesburg</span><br />
+                99 Skew Road, 1459,<br />
                 Boksburg, Gauteng
               </p>
             </a>
             <a href="#" id="location2">
               <p>
-                <span class="chevron-right">Durban</span><br>
-                Unit 4b, 50 Moreland Drive, Rinaldo Industrial Park, Redhill<br>
+                <span class="chevron-right">Durban</span><br />
+                Unit 4b, 50 Moreland Drive, Rinaldo Industrial Park, Redhill<br />
                 4071, Durban, KZN
               </p>
             </a>
             <a href="" id="location3">
               <p>
-                <span class="chevron-right">Cape Town</span><br>
-                111 Kruis Road, Brackenfell,<br>
+                <span class="chevron-right">Cape Town</span><br />
+                111 Kruis Road, Brackenfell,<br />
                 7560, Cape Town, Western Cape
               </p>
             </a>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
     <!-- =================================================================== -->
     <!-- Section 9/9 | Footer -->
     <!-- =================================================================== -->
-  <section class="footer">
-    <div class="container flex">
-      <!-- logo -->
-      <div class="footer__row">
-        <div class="logo">
-              <a href="#" class="footer__logo"
-                ><img src="./images/truck_logo.jpg" alt="logo_truck" class="image"
-              /></a>
-              <span class="footer__text"
-                >Transport<br />
-                society</span
-              >
-        </div>
-        <!-- disclaimer -->
-        <div class="disclaimer">
-          <p>*Les informations que nous collectons via ce formulaire font l'objet d'un traitement informatique dont la finalité est de pouvoir répondre à votre demande d'information.</p>
-          <p>
-            Les destinataires des données sont les services marketing et commercial du groupe Transport society
-            Conformément à la loi du 6 janvier 1978 relative à l'informatique, aux fichiers et aux libertés, modifiés par la loi du 20 juin 2018 et au Règlement de l'Union européenne n2016/679 relatif à la protection des personnes physiques à l'égard du traitement des données à caractère personnel et à la libre circulation des données(RGPD), vous disposez d'un droit d'accès, de rectification, de limitation, d'opposition, de portabilité, de limitation et d'effacement des informations qui vous concernent - en envoyant un courrier à dpo@transportsociety.com accompagné d'une copie d'une pièce d'identité valide.
-          </p>
-          <p>En soumettant ce formulaire, vous acceptez notre politique de confidentialité.</p>
+    <section class="footer">
+      <div class="container flex container-bg-c-gray">
+        <!-- logo -->
+        <div class="footer__row">
+          <div class="logo">
+            <a href="#" class="footer__logo"
+              ><img
+                src="./images/truck_logo.jpg"
+                alt="logo_truck"
+                class="image"
+            /></a>
+            <span class="footer__text"
+              >Transport<br />
+              society</span
+            >
+          </div>
+          <!-- disclaimer -->
+          <div class="disclaimer">
+            <p>
+              *The information we collect via this form is subject to computer
+              processing, the purpose of which is to be able to respond to your
+              request for information.
+            </p>
+            <p>
+              The recipients of the data are the marketing and sales departments
+              of the Transport society group In accordance with the law of
+              January 6, 1978 relating to data processing, files and freedoms,
+              modified by the law of June 20, 2018 and the Regulation of the
+              European Union n 2016/679 relating to the protection of natural
+              persons with regard to of the processing of personal data and the
+              free movement of data (GDPR), you have a right of access,
+              rectification, limitation, opposition, portability, limitation and
+              erasure of the information which concern you - by sending a letter
+              to dpo@transportsociety.com accompanied by a copy of a valid
+              identity document.
+            </p>
+            <p>By submitting this form, you agree to our privacy policy.</p>
+          </div>
         </div>
       </div>
-
-      
-      
-    </div>
-  </section>
+    </section>
     <!-- =================================================================== -->
     <!-- Section 9 bis/9 | Footer -->
     <!-- =================================================================== -->
     <section class="footer-bis">
-      <div class="container container--pall  container-bg-c-black flex flex-jc-fs">
+      <div
+        class="container container--pall container-bg-c-black flex flex-jc-fs"
+      >
         <!-- legal -->
         <div class="footer-bis__legal">
-          <a href="#">
+          <a href="#" id="nofollow1">
             <p>legal notice</p>
           </a>
-          <a href="#">
+          <a href="#" id="nofollow">
             <p>private policy</p>
           </a>
           <p>Transport society</p>
-        </div>  
+        </div>
       </div>
-      
     </section>
     <!-- =================================================================== -->
     <!-- Section 10/9 | Builder -->
-    <!-- =================================================================== -->                
-  <section class="builder">
-    <div class="container  flex">
-      <div class="builder__row">
-        <p>
-        <small>
-        &copy; 2022 &middot;
-        Built with <span>&hearts;</span> by <a href="https://www.linkedin.com/in/bempime-kheve/" target="_blank">Bempime Kheve</a>
-        </small>
-        </p>
+    <!-- =================================================================== -->
+    <section class="builder">
+      <div class="container flex">
+        <div class="builder__row">
+          <p>
+            <small>
+              &copy; 2022 &middot; Built with <span>&hearts;</span> by
+              <a
+                href="https://www.linkedin.com/in/bempime-kheve/"
+                target="_blank"
+                >Bempime Kheve</a
+              >
+            </small>
+          </p>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
     <script src="/js/script.js"></script>
   </body>
 </html>
