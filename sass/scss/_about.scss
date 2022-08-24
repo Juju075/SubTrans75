@@ -9,24 +9,25 @@
     .title {
       font-family: "Poppins", sans-serif;
       font-size: 2.1875rem;
-      line-height: 2.1875rem; /**/
+      line-height: 2.1875rem;
     }
     .subtitle {
       font-family: "Poppins", sans-serif;
       font-size: 1.25rem;
-      line-height: 1.25rem; /**/
+      line-height: 1.25rem;
       margin-top: 0.625rem;
       color: green;
     }
     .description {
       font-size: 0.75rem;
-      line-height: 1.125rem; /**/
+      line-height: 1.125rem;
       margin-top: 0.625rem;
     }
     /* Mozilla navigateur CSS Grid Inspector */
     /*
     /*Grid container*/
     .grid-container {
+      padding-top: 0.625rem;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat(3, 1fr);
@@ -34,6 +35,58 @@
         "title title title"
         "vehicles customers employees "
         "sites turnover refrigeration";
+      p {
+        font-size: 0.875rem;
+      }
+      .title {
+        grid-area: title;
+        p {
+          font-weight: bold;
+          color: green;
+        }
+      }
+      .vehicles {
+        grid-area: vehicles;
+        p:last-child {
+          font-size: 0.625rem;
+          color: gray;
+        }
+      }
+      .customers {
+        grid-area: customers;
+        p:last-child {
+          font-size: 0.625rem;
+          color: gray;
+        }
+      }
+      .employees {
+        grid-area: employees;
+        p:last-child {
+          font-size: 0.625rem;
+          color: gray;
+        }
+      }
+      .sites {
+        grid-area: sites;
+        p:last-child {
+          font-size: 0.625rem;
+          color: gray;
+        }
+      }
+      .turnover {
+        grid-area: turnover;
+        p:last-child {
+          font-size: 10px;
+          color: gray;
+        }
+      }
+      .refrigeration {
+        grid-area: refrigeration;
+        p:last-child {
+          font-size: 10px;
+          color: gray;
+        }
+      }
     }
   }
 

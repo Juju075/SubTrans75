@@ -337,27 +337,77 @@ button,
   font-family: "Poppins", sans-serif;
   font-size: 2.1875rem;
   line-height: 2.1875rem;
-  /**/
 }
 .about__text .subtitle {
   font-family: "Poppins", sans-serif;
   font-size: 1.25rem;
   line-height: 1.25rem;
-  /**/
   margin-top: 0.625rem;
   color: green;
 }
 .about__text .description {
   font-size: 0.75rem;
   line-height: 1.125rem;
-  /**/
   margin-top: 0.625rem;
 }
 .about__text .grid-container {
+  padding-top: 0.625rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   grid-template-areas: "title title title" "vehicles customers employees " "sites turnover refrigeration";
+}
+.about__text .grid-container p {
+  font-size: 0.875rem;
+}
+.about__text .grid-container .title {
+  grid-area: title;
+}
+.about__text .grid-container .title p {
+  font-weight: bold;
+  color: green;
+}
+.about__text .grid-container .vehicles {
+  grid-area: vehicles;
+}
+.about__text .grid-container .vehicles p:last-child {
+  font-size: 0.625rem;
+  color: gray;
+}
+.about__text .grid-container .customers {
+  grid-area: customers;
+}
+.about__text .grid-container .customers p:last-child {
+  font-size: 0.625rem;
+  color: gray;
+}
+.about__text .grid-container .employees {
+  grid-area: employees;
+}
+.about__text .grid-container .employees p:last-child {
+  font-size: 0.625rem;
+  color: gray;
+}
+.about__text .grid-container .sites {
+  grid-area: sites;
+}
+.about__text .grid-container .sites p:last-child {
+  font-size: 0.625rem;
+  color: gray;
+}
+.about__text .grid-container .turnover {
+  grid-area: turnover;
+}
+.about__text .grid-container .turnover p:last-child {
+  font-size: 10px;
+  color: gray;
+}
+.about__text .grid-container .refrigeration {
+  grid-area: refrigeration;
+}
+.about__text .grid-container .refrigeration p:last-child {
+  font-size: 10px;
+  color: gray;
 }
 .about img {
   margin-left: 0.9375rem;
