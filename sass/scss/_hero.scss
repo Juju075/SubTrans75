@@ -8,6 +8,21 @@
     padding: 70px 0 0 30px;
     margin-left: 5%;
     color: white;
+
+    //Breakpoint Mobile
+    @include breakpoint-down(small) {
+      color: black;
+    }
+
+    //Breakpoint Tablet
+    @include breakpoint-up(medium) {
+      color: green;
+    }
+
+    //Breakpoint Desktop
+    @include breakpoint-up(large) {
+      color: magenta;
+    }
   }
 
   &__title {

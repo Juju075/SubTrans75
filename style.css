@@ -261,6 +261,21 @@ button,
   margin-left: 5%;
   color: white;
 }
+@media (max-width: 39.9375rem) {
+  .hero__text-box {
+    color: black;
+  }
+}
+@media (min-width: 40em) {
+  .hero__text-box {
+    color: green;
+  }
+}
+@media (min-width: 64em) {
+  .hero__text-box {
+    color: magenta;
+  }
+}
 .hero__title {
   padding-top: 30px;
 }
