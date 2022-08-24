@@ -135,8 +135,6 @@ button,
 }
 .container--pt {
   padding-top: 4.375rem;
-  /*Breakpoint*/
-  /**/
 }
 .container--pl {
   padding-left: 1.5rem;
@@ -146,8 +144,6 @@ button,
 }
 .container--pb {
   padding-bottom: 4.375rem;
-  /*Breakpoint*/
-  /**/
 }
 .container-bg-c-green {
   background: #039b4a;
@@ -192,11 +188,23 @@ button,
 }
 
 /*=====  Section 1 [ Header ]  ======*/
-.header {
-  /*background: blue;*/
+@media (max-width: 39.9375rem) {
+  .header {
+    color: black;
+    font-weight: bold;
+  }
 }
-.headergreen {
-  background: #039b4a;
+@media (min-width: 40em) {
+  .header {
+    color: green;
+    font-weight: bold;
+  }
+}
+@media (min-width: 64em) {
+  .header {
+    color: magenta;
+    font-weight: bold;
+  }
 }
 .header nav {
   display: flex;
@@ -221,6 +229,12 @@ button,
 }
 .header__links {
   display: flex;
+  /* Tablette */
+}
+@media screen and (max-width: 1023px) {
+  .header__links {
+    display: none;
+  }
 }
 .header__links a {
   position: relative;
@@ -260,21 +274,6 @@ button,
   padding: 70px 0 0 30px;
   margin-left: 5%;
   color: white;
-}
-@media (max-width: 39.9375rem) {
-  .hero__text-box {
-    color: black;
-  }
-}
-@media (min-width: 40em) {
-  .hero__text-box {
-    color: green;
-  }
-}
-@media (min-width: 64em) {
-  .hero__text-box {
-    color: magenta;
-  }
 }
 .hero__title {
   padding-top: 30px;

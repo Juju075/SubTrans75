@@ -1,11 +1,22 @@
 /*=====  Section 1 [ Header ]  ======*/
 .header {
-  /*background: blue;*/
-
-  &green {
-    background: $greenTruck;
+  //Breakpoint Mobile
+  @include breakpoint-down(small) {
+    color: black;
+    font-weight: bold;
   }
-  //TODO
+
+  //Breakpoint Tablet
+  @include breakpoint-up(medium) {
+    color: green;
+    font-weight: bold;
+  }
+
+  //Breakpoint Desktop
+  @include breakpoint-up(large) {
+    color: magenta;
+    font-weight: bold;
+  }
 
   nav {
     display: flex;
@@ -36,6 +47,11 @@
 
   &__links {
     display: flex;
+
+    /* Tablette */
+    @media screen and (max-width: 1023px) {
+      display: none;
+    }
 
     a {
       position: relative;
