@@ -198,24 +198,6 @@ button,
 }
 
 /*=====  Section 1 [ Header ]  ======*/
-@media (max-width: 39.9375rem) {
-  .header {
-    color: black;
-    font-weight: bold;
-  }
-}
-@media (min-width: 40em) {
-  .header {
-    color: green;
-    font-weight: bold;
-  }
-}
-@media (min-width: 64em) {
-  .header {
-    color: magenta;
-    font-weight: bold;
-  }
-}
 .header nav {
   display: flex;
   align-items: center;

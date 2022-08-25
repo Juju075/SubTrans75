@@ -1,23 +1,5 @@
 /*=====  Section 1 [ Header ]  ======*/
 .header {
-  //Breakpoint Mobile
-  @include breakpoint-down(small) {
-    color: black;
-    font-weight: bold;
-  }
-
-  //Breakpoint Tablet
-  @include breakpoint-up(medium) {
-    color: green;
-    font-weight: bold;
-  }
-
-  //Breakpoint Desktop
-  @include breakpoint-up(large) {
-    color: magenta;
-    font-weight: bold;
-  }
-
   nav {
     display: flex;
     align-items: center;
