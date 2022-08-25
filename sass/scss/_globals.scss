@@ -37,7 +37,6 @@ li {
   list-style: none;
 }
 
-/*----------  Buttons  ----------*/
 button,
 .button {
   //TODO
@@ -86,16 +85,23 @@ button,
   color: #fefefe;
 }
 
-/*----------  MediaQueries (Mobile First) ----------*/
-.hide-for-mobile {
-  //hide for mobile and tablet button menu
-  @include breakpoint-down(medium) {
+.only-for-mobile {
+  //Mobile & less
+  @media screen and (min-width: 640px) {
     display: none;
   }
 }
+
+.hide-for-tablet {
+  //Mobile & less
+  @media screen and (max-width: 639px) {
+    display: none;
+  }
+}
+
 .hide-for-desktop {
-  //hide for desktop  hamburger
-  @include breakpoint-up(large) {
+  //Tablet & less
+  @media screen and (max-width: 1146px) {
     display: none;
   }
 }
@@ -171,7 +177,7 @@ button,
   }
   &-jc-fs {
     justify-content: flex-start;
-    @media screen and (max-width: 1023px) {
+    @media screen and (max-width: 1146px) {
       justify-content: center;
     }
   }

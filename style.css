@@ -43,7 +43,6 @@ li {
   list-style: none;
 }
 
-/*----------  Buttons  ----------*/
 button,
 .button {
   display: inline-block;
@@ -92,14 +91,19 @@ button,
   color: #fefefe;
 }
 
-/*----------  MediaQueries (Mobile First) ----------*/
-@media (max-width: 63.9375em) {
-  .hide-for-mobile {
+@media screen and (min-width: 640px) {
+  .only-for-mobile {
     display: none;
   }
 }
 
-@media (min-width: 64em) {
+@media screen and (max-width: 639px) {
+  .hide-for-tablet {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1146px) {
   .hide-for-desktop {
     display: none;
   }
@@ -170,7 +174,7 @@ button,
 .flex-jc-fs {
   justify-content: flex-start;
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1146px) {
   .flex-jc-fs {
     justify-content: center;
   }
@@ -235,7 +239,7 @@ button,
 .header__links {
   display: flex;
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1146px) {
   .header__links {
     display: none;
   }
@@ -325,7 +329,7 @@ button,
   font-weight: normal;
   justify-content: space-between;
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1146px) {
   .vehicules__frame {
     max-width: 700px;
   }
@@ -445,7 +449,7 @@ button,
   height: 25rem;
   background-image: url("/images/truck_driver.JPG");
 }
-@media screen and (max-width: 1023px) {
+@media (min-width: 640px) and (max-width: 1146px) {
   .about img {
     background-image: url("/images/truck_driver2.jpg");
     background-repeat: no-repeat;
@@ -552,13 +556,13 @@ button,
   width: 100%;
   background: linear-gradient(0deg, #039b4a 89.3%, white 70%);
 }
+@media screen and (max-width: 1146px) {
+  .services__contents {
+    justify-content: center;
+  }
+}
 .services__contents img {
   width: 50%;
-}
-@media screen and (max-width: 1023px) {
-  .services__contents img {
-    display: none;
-  }
 }
 .services__contents .grid-container {
   display: grid;
@@ -715,7 +719,7 @@ button,
   position: absolute;
   padding: 40px 0 0 30px;
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1146px) {
   .maps__content-address {
     max-width: 320px;
   }
@@ -743,7 +747,7 @@ button,
   border-bottom: 1px solid gray;
   color: #000;
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1146px) {
   .maps__content-address .spots p {
     max-width: 15.625rem;
   }
@@ -764,7 +768,7 @@ button,
   height: 0.625rem;
   transform: rotate(225deg);
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1146px) {
   .maps__content-address .spots .chevron-right::after {
     margin-left: 30px;
   }
@@ -810,6 +814,13 @@ button,
   margin: 0.625rem;
   padding-top: 1.25rem;
   line-height: 1.25rem;
+}
+@media screen and (max-width: 639px) {
+  .footer__row .disclaimer p {
+    font-size: 30px;
+    color: gray;
+    line-height: 40px;
+  }
 }
 .footer__row .disclaimer p:last-child {
   padding-bottom: 1.25rem;

@@ -7,14 +7,14 @@
     display: flex;
     width: 100%;
     background: linear-gradient(0deg, $greenTruck 89.3%, white 70%);
+    @media screen and (max-width: 1146px) {
+      justify-content: center;
+    }
+
     img {
       width: 50%;
     }
-    @media screen and (max-width: 1023px) {
-      img {
-        display: none;
-      }
-    }
+
     .grid-container {
       display: grid;
       grid-template-columns: repeat(2, 1fr);

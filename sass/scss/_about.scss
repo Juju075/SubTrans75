@@ -98,7 +98,8 @@
     width: 27.125rem;
     height: 25rem;
     background-image: url("/images/truck_driver.JPG");
-    @media screen and (max-width: 1023px) {
+
+    @media (min-width: 640px) and (max-width: 1146px) {
       background-image: url("/images/truck_driver2.jpg");
       background-repeat: no-repeat;
       width: 10.875rem;
