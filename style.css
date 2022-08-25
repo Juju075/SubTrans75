@@ -309,8 +309,6 @@ button,
 
 .vehicules {
   margin-top: 6.25rem;
-  /*3*/
-  /*5*/
 }
 .vehicules__title {
   display: flex;
@@ -363,6 +361,7 @@ button,
   height: 8.6875rem;
   background: url("/images/models/1/truck_model_01_small.jpg") no-repeat;
   border-radius: 10px 10px 0 0;
+  opacity: 0.7;
 }
 @media screen and (max-width: 1146px) {
   .vehicules__card1 .image1 {
@@ -381,6 +380,7 @@ button,
   }
 }
 .vehicules__card1 .image1:hover {
+  opacity: 1;
   background: url("/images/models/1/truck_H30_small.jpg") no-repeat;
 }
 @media screen and (max-width: 1146px) {
@@ -439,41 +439,50 @@ button,
     background: url("/images/models/1/truck_H30_big.jpg") no-repeat;
   }
 }
-.vehicules .image3 {
+.vehicules__card3 {
+  background: red;
+  margin: 25px 0 25px 0;
+  background: white;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 9px 22px 4px rgba(0, 0, 0, 0.36);
+  box-shadow: 5px 9px 22px 4px rgba(0, 0, 0, 0.36);
+  /*3*/
+}
+.vehicules__card3 .image3 {
   position: relative;
   display: inline-block;
   width: 19.0625rem;
   height: 8.6875rem;
-  background: url("/images/models/1/truck_model_01_small.jpg") no-repeat;
+  background: url("/images/models/3/truck_model_03_small.JPG") no-repeat;
   border-radius: 10px 10px 0 0;
 }
 @media screen and (max-width: 1146px) {
-  .vehicules .image3 {
-    background: url("/images/models/1/truck_model_01_medium.jpg") no-repeat;
+  .vehicules__card3 .image3 {
+    background: url("/images/models/3/truck_model_03_medium.JPG") no-repeat;
     width: 405px;
     height: 185px;
     /*image plus grande*/
   }
 }
 @media screen and (max-width: 1000px) {
-  .vehicules .image3 {
-    background: url("/images/models/1/truck_model_01_big.jpg") no-repeat;
+  .vehicules__card3 .image3 {
+    background: url("/images/models/3/truck_model_03_big.JPG") no-repeat;
     width: 504px;
     height: 247px;
     /*image plus grande*/
   }
 }
-.vehicules .image3:hover {
-  background: url("/images/models/1/truck_H30_small.jpg") no-repeat;
+.vehicules__card3 .image3:hover {
+  background: url("/images/models/3/truck_NQR500_small.jpg") no-repeat;
 }
 @media screen and (max-width: 1146px) {
-  .vehicules .image3:hover {
-    background: url("/images/models/1/truck_H30_medium.jpg") no-repeat;
+  .vehicules__card3 .image3:hover {
+    background: url("/images/models/3/truck_NQR500_medium.jpg") no-repeat;
   }
 }
 @media screen and (max-width: 1000px) {
-  .vehicules .image3:hover {
-    background: url("/images/models/1/truck_H30_big.jpg") no-repeat;
+  .vehicules__card3 .image3:hover {
+    background: url("/images/models/3/truck_NQR500_big.jpg") no-repeat;
   }
 }
 .vehicules__card4 {
@@ -492,6 +501,7 @@ button,
   height: 8.6875rem;
   background: url("/images/models/4/truck_model_04_small.JPG") no-repeat;
   border-radius: 10px 10px 0 0;
+  opacity: 0.7;
 }
 @media screen and (max-width: 1146px) {
   .vehicules__card4 .image4 {
@@ -510,6 +520,7 @@ button,
   }
 }
 .vehicules__card4 .image4:hover {
+  opacity: 1;
   background: url("/images/models/4/truck_dyna_small.jpg") no-repeat;
 }
 @media screen and (max-width: 1146px) {
@@ -522,41 +533,52 @@ button,
     background: url("/images/models/4/truck_dyna_big.jpg") no-repeat;
   }
 }
-.vehicules .image5 {
+.vehicules__card5 {
+  background: red;
+  margin: 25px 0 25px 0;
+  background: white;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 9px 22px 4px rgba(0, 0, 0, 0.36);
+  box-shadow: 5px 9px 22px 4px rgba(0, 0, 0, 0.36);
+  /*5*/
+}
+.vehicules__card5 .image5 {
   position: relative;
   display: inline-block;
   width: 19.0625rem;
   height: 8.6875rem;
-  background: url("/images/models/1/truck_model_01_small.jpg") no-repeat;
+  background: url("/images/models/5/truck_model_05_small.jpg") no-repeat;
   border-radius: 10px 10px 0 0;
+  opacity: 0.7;
 }
 @media screen and (max-width: 1146px) {
-  .vehicules .image5 {
-    background: url("/images/models/1/truck_model_01_medium.jpg") no-repeat;
+  .vehicules__card5 .image5 {
+    background: url("/images/models/5/truck_model_05_medium.jpg") no-repeat;
     width: 405px;
     height: 185px;
     /*image plus grande*/
   }
 }
 @media screen and (max-width: 1000px) {
-  .vehicules .image5 {
-    background: url("/images/models/1/truck_model_01_big.jpg") no-repeat;
+  .vehicules__card5 .image5 {
+    background: url("/images/models/5/truck_model_05_big.jpg") no-repeat;
     width: 504px;
     height: 247px;
     /*image plus grande*/
   }
 }
-.vehicules .image5:hover {
-  background: url("/images/models/1/truck_H30_small.jpg") no-repeat;
+.vehicules__card5 .image5:hover {
+  background: url("/images/models/5/truck_fourgon_small.jpg") no-repeat;
+  opacity: 1;
 }
 @media screen and (max-width: 1146px) {
-  .vehicules .image5:hover {
-    background: url("/images/models/1/truck_H30_medium.jpg") no-repeat;
+  .vehicules__card5 .image5:hover {
+    background: url("/images/models/5/truck_fourgon_medium.jpg") no-repeat;
   }
 }
 @media screen and (max-width: 1000px) {
-  .vehicules .image5:hover {
-    background: url("/images/models/1/truck_H30_big.jpg") no-repeat;
+  .vehicules__card5 .image5:hover {
+    background: url("/images/models/5/truck_fourgon_big.jpg") no-repeat;
   }
 }
 .vehicules .model {
