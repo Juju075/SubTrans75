@@ -54,6 +54,10 @@
           margin-left: 30px;
         }
       }
+      p:hover {
+        background: rgb(224, 216, 216);
+        transition: 0.5s all ease-out;
+      }
     }
   }
 

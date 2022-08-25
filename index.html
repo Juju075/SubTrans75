@@ -338,40 +338,85 @@
         <div class="contact__right-bloc">
           <!-- Form | Wrapper 1 row | box (1column)-->
           <form action="#">
-            <!-- 1-->
-            <div class="wrapper"><div class="box">ici</div></div>
-            <!-- 2-->
+            <!-- 1  Element block -->
             <div class="wrapper">
               <div class="box">
-                <input type="text" name="firstname" id="firstname" />
+                <div>
+                  <div>Profile</div>
+                  <div>
+                    <div class="inline">
+                      <input type="radio" name="consumer" id="consumer" />
+                      <p>Consumer</p>
+                    </div>
+                    <div class="inline">
+                      <input
+                        type="radio"
+                        name="professionnal"
+                        id="professionnal"
+                      />
+                      <p>Professionnal</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Fin box -->
+              <div class="box">
+                <div>
+                  <div>Title</div>
+                  <div>
+                    <div class="inline">
+                      <input type="radio" name="consumer" id="consumer" />
+                      <p>Mr</p>
+                    </div>
+                    <div class="inline">
+                      <input
+                        type="radio"
+                        name="professionnal"
+                        id="professionnal"
+                      />
+                      <p>Mrs</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 1  Element block -->
+            <div class="wrapper">
+              <div class="box">
                 <label for="firstname">First Name</label>
+                <input type="text" name="firstname" id="firstname" />
               </div>
               <div class="box">
-                <input type="text" name="surname" id="surname" />
                 <label for="surname">Surname</label>
+                <input type="text" name="surname" id="surname" />
               </div>
             </div>
-            <!-- 3-->
+
+            <!-- 1  Element block -->
             <div class="wrapper">
               <div class="box">
-                <input type="text" name="company" id="company" required />
                 <label for="company">Company name</label>
+                <input type="text" name="company" id="company" required />
               </div>
               <div class="box">
-                <input type="text" name="Job" id="Job" required />
                 <label for="Job">Job title</label>
+                <input type="text" name="Job" id="Job" required />
               </div>
             </div>
-            <!-- 4-->
+
+            <!-- 1  Element block -->
             <div class="wrapper">
               <div class="box">
-                <input type="email" name="email" id="email" required />
                 <label for="email">Email address</label>
+                <input type="email" name="email" id="email" required />
               </div>
             </div>
-            <!-- 5-->
+
+            <!-- 1  Element block -->
             <div class="wrapper">
               <div class="box">
+                <label for="phone">Télephone</label>
                 <input
                   type="tel"
                   id="phone"
@@ -379,7 +424,6 @@
                   pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
                   required
                 />
-                <label for="phone">Telephone</label>
               </div>
               <div class="box">
                 <select>
@@ -388,9 +432,11 @@
                   <option value="">Country3</option>
                   <option value="">...</option>
                 </select>
+                <p>Country</p>
               </div>
             </div>
-            <!-- 6-->
+
+            <!-- 1  Element block -->
             <div class="wrapper">
               <div class="box">
                 <textarea
@@ -402,7 +448,8 @@
                 <label for="message">Message.</label>
               </div>
             </div>
-            <!-- 7-->
+
+            <!-- 1  Element block -->
             <div class="wrapper">
               <div class="box">
                 <input type="radio" name="info" id="info" />
@@ -412,7 +459,12 @@
                 </label>
               </div>
             </div>
-            <input type="submit" name="submit" value="Submit" />
+
+            <div class="wrapper">
+              <div class="box">
+                <input type="submit" name="submit" value="Submit" />
+              </div>
+            </div>
           </form>
         </div>
       </div>

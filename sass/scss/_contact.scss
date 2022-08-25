@@ -31,6 +31,7 @@
       grid-gap: 1.875rem;
       gap: 1.875rem;
 
+      /* Element */
       .box {
         width: 100%;
         position: relative;
@@ -43,28 +44,39 @@
           background: transparent;
           border: none;
           outline: none; /* outline-sytle de border */
-          border-bottom: 1px solid turquoise;
+          border-bottom: 1px solid gray;
           transition: 0.5s linear;
-          background: turquoise;
-          border: 1px solid magenta;
         }
 
         input:focus,
         .wrapper .box input:valid {
-          padding: 1.25rem 0.625rem;
-          background: turquoise;
+          padding: 5px 5px;
+          background: green;
+          opacity: 0.3;
           margin-top: 0.625rem;
+          transition: 0.5s all ease;
+        }
+        input[type="submit"] {
+          width: 250px;
+          height: 40px;
+          font-size: 12px;
+          font-weight: normal;
+          color: white;
+          background: green;
         }
         /*Label*/
         label {
           top: 0;
           left: 0;
+          font-family: "Poppins", sans-serif;
           color: black;
-          font-size: 1.125rem;
+          font-size: 14px;
           font-weight: bold;
-          padding: 1.25rem;
           transition: 0.5s linear;
-          border: 1px solid red;
+        }
+        label.info {
+          background: red;
+          font-weight: normal;
         }
       }
     }

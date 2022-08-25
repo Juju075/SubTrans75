@@ -1,7 +1,7 @@
 .expertises {
   margin: 3.125rem 10% 0 20%;
   display: grid;
- 
+
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, 1fr);
 
@@ -11,29 +11,13 @@
     "text2 car text4"
     "text5 text5 text5";
 
-  /*
-  https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Grid_Layout/Box_Alignment_in_CSS_Grid_Layout
-    Rappel: 
-    bloc/column axis
-    Inline/ row axis
-    L'axe en ligne est orthogonal à l'axe de bloc. 
-    C'est la direction selon laquelle progresse le texte.
-
-    align-items et align-self gèrent l'alignement des objets sur l'axe de bloc. 
-    justify-self permettent quant à eux de gérer l'alignement sur l'axe en ligne
-    
-    texte aligner
-    https://developer.mozilla.org/fr/docs/Web/CSS/text-align
-    */
-
   p {
     font-family: "Poppins", sans-serief;
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: bold;
   }
 
   &__title {
-    border: 1px solid red;
     grid-area: title;
     justify-self: center;
     //TODO reduire hauteur.
@@ -43,8 +27,8 @@
       color: green;
     }
     p:last-child {
-      padding-top: 10px;
-      font-size: 35px;
+      padding-top: 0.625rem;
+      font-size: 2.1875rem;
       color: black;
     }
   }
@@ -53,7 +37,7 @@
     text-align: end;
 
     p:last-child {
-      padding: 10px;
+      padding: 0.625rem;
       font-weight: normal;
     }
   }
@@ -61,13 +45,12 @@
     grid-area: text2;
     text-align: end;
     p:last-child {
-      padding: 10px;
+      padding: 0.625rem;
       font-weight: normal;
     }
   }
   &__car {
     //TODO centrer l'image
-    border: 1px solid blue;
     grid-area: car;
     img {
       justify-content: center;
@@ -76,14 +59,14 @@
   &__text3 {
     grid-area: text3;
     p:last-child {
-      padding: 10px;
+      padding: 0.625rem;
       font-weight: normal;
     }
   }
   &__text4 {
     grid-area: text4;
     p:last-child {
-      padding: 10px;
+      padding: 0.625rem;
       font-weight: normal;
     }
   }
@@ -94,7 +77,7 @@
       text-align: center;
     }
     p:last-child {
-      padding: 10px;
+      padding: 0.625rem;
       font-weight: normal;
     }
   }
