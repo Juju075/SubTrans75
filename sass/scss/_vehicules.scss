@@ -77,7 +77,6 @@
   }
 
   &__card2 {
-    background: red;
     margin: 25px 0 25px 0;
     background: white;
     border-radius: 10px;
@@ -89,8 +88,9 @@
       display: inline-block;
       width: 19.0625rem;
       height: 8.6875rem;
-      background: url("/images/models/1/truck_model_01_small.jpg") no-repeat;
+      background: url("/images/models/2/truck_model_02_small.JPG") no-repeat;
       border-radius: 10px 10px 0 0;
+      opacity: 0.7;
 
       @media screen and (max-width: 1146px) {
         background: url("/images/models/1/truck_model_01_medium.jpg") no-repeat;
@@ -106,12 +106,13 @@
       }
     }
     .image2:hover {
-      background: url("/images/models/1/truck_H30_small.jpg") no-repeat;
+      opacity: 1;
+      background: url("/images/models/2/truck_FTR850_small.jpg") no-repeat;
       @media screen and (max-width: 1146px) {
-        background: url("/images/models/1/truck_H30_medium.jpg") no-repeat;
+        background: url("/images/models/2/truck_FTR850_medium.jpg") no-repeat;
       }
       @media screen and (max-width: 1000px) {
-        background: url("/images/models/1/truck_H30_big.jpg") no-repeat;
+        background: url("/images/models/2/truck_FTR850_big.jpg") no-repeat;
       }
     }
   }
@@ -131,6 +132,7 @@
       height: 8.6875rem;
       background: url("/images/models/3/truck_model_03_small.JPG") no-repeat;
       border-radius: 10px 10px 0 0;
+      opacity: 0.7;
 
       @media screen and (max-width: 1146px) {
         background: url("/images/models/3/truck_model_03_medium.JPG") no-repeat;
@@ -146,6 +148,7 @@
       }
     }
     .image3:hover {
+      opacity: 1;
       background: url("/images/models/3/truck_NQR500_small.jpg") no-repeat;
       @media screen and (max-width: 1146px) {
         background: url("/images/models/3/truck_NQR500_medium.jpg") no-repeat;
