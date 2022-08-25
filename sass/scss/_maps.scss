@@ -66,12 +66,13 @@
       grid-template-rows: repeat(2, 1fr);
       grid-template-areas:
         "contact contact contact"
-        "town1 town2 town3";
+        "town1 town2 town3"
+        "button1 button2 button3";
 
       p {
         font-family: "Poppins", sans-serif;
-        font-size: 14px;
         font-weight: bold;
+        font-size: 14px;
         line-height: 14px;
       }
 
@@ -79,8 +80,9 @@
         grid-area: contact;
         text-align: center;
         p {
-          font-weight: normal;
+          font-weight: bold;
           span {
+            font-weight: normal;
             font-size: 30px;
           }
         }
@@ -113,6 +115,38 @@
 
       background: white;
       color: black;
+
+      /*----------  Subsection comment block  ----------*/
+      .button1 {
+        grid-area: button1;
+        a {
+          font-size: 30px;
+          background: rgb(224, 216, 216);
+          border-radius: 10px;
+          padding-top: 0px;
+          color: black;
+        }
+      }
+      .button2 {
+        grid-area: button2;
+        a {
+          font-size: 30px;
+          background: rgb(224, 216, 216);
+          border-radius: 10px;
+          padding-top: 0px;
+          color: black;
+        }
+      }
+      .button3 {
+        grid-area: button3;
+        a {
+          font-size: 30px;
+          background: rgb(224, 216, 216);
+          border-radius: 10px;
+          padding-top: 0px;
+          color: black;
+        }
+      }
     }
   }
 }

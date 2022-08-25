@@ -7,6 +7,7 @@
     display: flex;
     width: 100%;
     background: linear-gradient(0deg, $greenTruck 89.3%, white 70%);
+
     @media screen and (max-width: 1146px) {
       justify-content: center;
     }
@@ -26,12 +27,32 @@
         "support customisation"
         "button button";
 
+      @media screen and (max-width: 640px) {
+        padding-top: 50px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(7, 1fr);
+        grid-template-areas:
+          "title"
+          "opening "
+          "maintenance"
+          "parts"
+          "repairs"
+          "support"
+          "customisation"
+          "button";
+        transition: 1s all ease;
+      }
+
       p {
         font-family: "Poppins", sans-serif;
         font-size: 18px;
         font-weight: bold;
         line-height: 20px;
         padding: 14px 0 0 20px;
+
+        @media screen and (max-width: 640px) {
+          font-size: 28px;
+        }
       }
 
       .title {

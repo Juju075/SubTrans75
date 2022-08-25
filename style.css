@@ -284,6 +284,15 @@ button,
   margin-left: 5%;
   color: white;
 }
+@media screen and (max-width: 640px) {
+  .hero__text-box {
+    justify-content: center;
+    margin-left: 20%;
+    width: 300px;
+    padding: auto;
+    transition: 1s all ease;
+  }
+}
 .hero__title {
   padding-top: 30px;
 }
@@ -292,6 +301,11 @@ button,
   font-size: 45px;
   font-weight: bold;
   line-height: 2.1875rem;
+}
+@media screen and (max-width: 640px) {
+  .hero__title p {
+    line-height: 50px;
+  }
 }
 .hero__title p:last-child {
   padding-top: 30px;
@@ -571,12 +585,26 @@ button,
   grid-template-rows: repeat(4, 1fr);
   grid-template-areas: "title title" "opening maintenance" "parts repairs" "support customisation" "button button";
 }
+@media screen and (max-width: 640px) {
+  .services__contents .grid-container {
+    padding-top: 50px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-areas: "title" "opening " "maintenance" "parts" "repairs" "support" "customisation" "button";
+    transition: 1s all ease;
+  }
+}
 .services__contents .grid-container p {
   font-family: "Poppins", sans-serif;
   font-size: 18px;
   font-weight: bold;
   line-height: 20px;
   padding: 14px 0 0 20px;
+}
+@media screen and (max-width: 640px) {
+  .services__contents .grid-container p {
+    font-size: 28px;
+  }
 }
 .services__contents .grid-container .title {
   padding-top: 140px;
@@ -781,14 +809,15 @@ button,
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "contact contact contact" "town1 town2 town3";
+    grid-template-areas: "contact contact contact" "town1 town2 town3" "button1 button2 button3";
     background: white;
     color: black;
+    /*----------  Subsection comment block  ----------*/
   }
   .maps__content-address-mobile p {
     font-family: "Poppins", sans-serif;
-    font-size: 14px;
     font-weight: bold;
+    font-size: 14px;
     line-height: 14px;
   }
   .maps__content-address-mobile .contact {
@@ -796,9 +825,10 @@ button,
     text-align: center;
   }
   .maps__content-address-mobile .contact p {
-    font-weight: normal;
+    font-weight: bold;
   }
   .maps__content-address-mobile .contact p span {
+    font-weight: normal;
     font-size: 30px;
   }
   .maps__content-address-mobile .town1 {
@@ -825,6 +855,36 @@ button,
   .maps__content-address-mobile .town3 p:last-child {
     padding-top: 14px;
     font-weight: normal;
+  }
+  .maps__content-address-mobile .button1 {
+    grid-area: button1;
+  }
+  .maps__content-address-mobile .button1 a {
+    font-size: 30px;
+    background: #e0d8d8;
+    border-radius: 10px;
+    padding-top: 0px;
+    color: black;
+  }
+  .maps__content-address-mobile .button2 {
+    grid-area: button2;
+  }
+  .maps__content-address-mobile .button2 a {
+    font-size: 30px;
+    background: #e0d8d8;
+    border-radius: 10px;
+    padding-top: 0px;
+    color: black;
+  }
+  .maps__content-address-mobile .button3 {
+    grid-area: button3;
+  }
+  .maps__content-address-mobile .button3 a {
+    font-size: 30px;
+    background: #e0d8d8;
+    border-radius: 10px;
+    padding-top: 0px;
+    color: black;
   }
 }
 
