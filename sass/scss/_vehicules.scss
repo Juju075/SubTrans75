@@ -8,6 +8,13 @@
     font-size: 3.125rem;
     font-weight: 800;
     line-height: 1.25rem;
+    transition: 1s all ease;
+
+    @media screen and (max-width: 1146px) {
+      font-size: 40px;
+      font-weight: 800;
+      transition: 1s all ease;
+    }
   }
 
   &__frame {
@@ -15,12 +22,15 @@
     flex-wrap: wrap;
     margin-top: 3.125rem;
     max-width: 69.375rem;
-    font-family: poppins;
+    font-family: "Poppins", sans-serif;
     font-weight: normal;
     justify-content: space-between;
 
     @media screen and (max-width: 1146px) {
-      max-width: 700px;
+      max-width: 850px;
+    }
+    @media screen and (max-width: 1000px) {
+      max-width: 650px;
     }
   }
   &__card {
@@ -29,10 +39,20 @@
     border-radius: 10px;
     -webkit-box-shadow: 5px 9px 22px 4px rgba(0, 0, 0, 0.36);
     box-shadow: 5px 9px 22px 4px rgba(0, 0, 0, 0.36);
+
     img {
-      height: 8.6875rem;
       width: 19.0625rem;
+      height: 8.6875rem;
       border-radius: 10px 10px 0 0;
+
+      @media screen and (max-width: 1146px) {
+        width: 405px;
+        height: 185px;
+      }
+      @media screen and (max-width: 1000px) {
+        width: 504px;
+        height: 247px;
+      }
     }
   }
   .model {

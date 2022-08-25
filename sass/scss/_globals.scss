@@ -85,7 +85,6 @@ button,
   color: #fefefe;
 }
 
-/* Probleme*/
 .only-for-mobile {
   //Mobile to tablet
   @media screen and (max-width: 640px) {
@@ -178,8 +177,10 @@ button,
   }
   &-jc-fs {
     justify-content: flex-start;
+    transition: 1s all ease;
     @media screen and (max-width: 1146px) {
       justify-content: center;
+      transition: 1s all ease;
     }
   }
   &-ai-c {

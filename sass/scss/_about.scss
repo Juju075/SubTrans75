@@ -19,12 +19,20 @@
       line-height: 1.25rem;
       margin-top: 0.625rem;
       color: green;
+      @media screen and (max-width: 1146px) {
+        font-size: 22px;
+        line-height: 22px;
+      }
     }
     .description {
       font-family: "Mulish", sans-serif;
       font-size: 0.75rem;
       line-height: 1.125rem;
       margin-top: 0.625rem;
+      @media screen and (max-width: 1146px) {
+        padding-top: 22px;
+        font-size: 22px;
+      }
     }
     /* Mozilla navigateur CSS Grid Inspector */
     /*
@@ -46,6 +54,9 @@
         p {
           font-weight: bold;
           color: green;
+          @media screen and (max-width: 1146px) {
+            font-size: 20px;
+          }
         }
       }
       .vehicles {

@@ -91,7 +91,6 @@ button,
   color: #fefefe;
 }
 
-/* Probleme*/
 @media screen and (max-width: 640px) {
   .only-for-mobile {
     display: none;
@@ -174,10 +173,12 @@ button,
 }
 .flex-jc-fs {
   justify-content: flex-start;
+  transition: 1s all ease;
 }
 @media screen and (max-width: 1146px) {
   .flex-jc-fs {
     justify-content: center;
+    transition: 1s all ease;
   }
 }
 .flex-ai-c {
@@ -316,19 +317,32 @@ button,
   font-size: 3.125rem;
   font-weight: 800;
   line-height: 1.25rem;
+  transition: 1s all ease;
+}
+@media screen and (max-width: 1146px) {
+  .vehicules__title {
+    font-size: 40px;
+    font-weight: 800;
+    transition: 1s all ease;
+  }
 }
 .vehicules__frame {
   display: flex;
   flex-wrap: wrap;
   margin-top: 3.125rem;
   max-width: 69.375rem;
-  font-family: poppins;
+  font-family: "Poppins", sans-serif;
   font-weight: normal;
   justify-content: space-between;
 }
 @media screen and (max-width: 1146px) {
   .vehicules__frame {
-    max-width: 700px;
+    max-width: 850px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .vehicules__frame {
+    max-width: 650px;
   }
 }
 .vehicules__card {
@@ -339,9 +353,21 @@ button,
   box-shadow: 5px 9px 22px 4px rgba(0, 0, 0, 0.36);
 }
 .vehicules__card img {
-  height: 8.6875rem;
   width: 19.0625rem;
+  height: 8.6875rem;
   border-radius: 10px 10px 0 0;
+}
+@media screen and (max-width: 1146px) {
+  .vehicules__card img {
+    width: 405px;
+    height: 185px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .vehicules__card img {
+    width: 504px;
+    height: 247px;
+  }
 }
 .vehicules .model {
   padding-left: 1.25rem;
@@ -375,11 +401,23 @@ button,
   margin-top: 0.625rem;
   color: green;
 }
+@media screen and (max-width: 1146px) {
+  .about__text .subtitle {
+    font-size: 22px;
+    line-height: 22px;
+  }
+}
 .about__text .description {
   font-family: "Mulish", sans-serif;
   font-size: 0.75rem;
   line-height: 1.125rem;
   margin-top: 0.625rem;
+}
+@media screen and (max-width: 1146px) {
+  .about__text .description {
+    padding-top: 22px;
+    font-size: 22px;
+  }
 }
 .about__text .grid-container {
   padding-top: 0.625rem;
@@ -397,6 +435,11 @@ button,
 .about__text .grid-container .title p {
   font-weight: bold;
   color: green;
+}
+@media screen and (max-width: 1146px) {
+  .about__text .grid-container .title p {
+    font-size: 20px;
+  }
 }
 .about__text .grid-container .vehicles {
   grid-area: vehicles;
@@ -778,6 +821,7 @@ button,
   width: 0.625rem;
   height: 0.625rem;
   transform: rotate(225deg);
+  transition: 0.5s all ease;
 }
 @media screen and (max-width: 1146px) {
   .maps__content-address .spots .chevron-right::after {
@@ -792,6 +836,7 @@ button,
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: "contact contact contact" "town1 town2 town3" "button1 button2 button3";
+    transition: 0.5s all ease;
     background: white;
     color: black;
     /*----------  Subsection comment block  ----------*/
