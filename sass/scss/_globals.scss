@@ -86,7 +86,7 @@ button,
 }
 
 .only-for-mobile {
-  //Mobile & less
+  //Mobile to tablet
   @media screen and (min-width: 640px) {
     display: none;
   }
