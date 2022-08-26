@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*----------  Primary colors  ----------*/
 /*----------  Neutral  ----------*/
 /*----------  Font Sizes  ----------*/
@@ -308,6 +309,136 @@ button,
   cursor: pointer;
 }
 
+.hamburger-container {
+  position: relative;
+  top: 5%;
+  transform: translate(-50%, -50%);
+  height: 35px;
+  width: 39px;
+  border-radius: 6px;
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.4s linear;
+  /**/
+  overflow: hidden;
+}
+
+/*----------  js event click addClass .active to hamburger-container ----------*/
+/* modifie etat background*/
+.hamburger-container.active {
+  background-color: #039f4e;
+}
+
+/* */
+.hamburger-container .menu {
+  position: relative;
+  height: 100%;
+  /*width: 65px;*/
+  width: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Tracage des traits */
+.menu .line {
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  border-radius: 3px;
+  background-color: #2c3e50;
+  transition: all 0.4s linear;
+  /**/
+}
+
+/*=============================================
+=      Positionnement & Animation             =
+=============================================*/
+.menu .line.one {
+  top: 7px;
+}
+
+.hamburger-container.active .line.one {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  background-color: #fff;
+}
+
+.menu .line.two {
+  left: 0;
+  opacity: 1;
+}
+
+.hamburger-container.active .line.two {
+  left: -100%;
+  opacity: 0;
+  background-color: #de0611;
+}
+
+/* */
+.menu .line.three {
+  bottom: 7px;
+}
+
+.hamburger-container.active .line.three {
+  bottom: 50%;
+  transform: translateY(50%) rotate(-45deg);
+  background-color: #fff;
+}
+
+/*=============================================
+   Compilation de Overlay - Start
+=============================================*/
+@media screen and (max-width: 900px) {
+  /* click hamburge addclasslist .navbar à */
+  .navbar {
+    width: 100%;
+    padding: 0;
+    /*----------  Audessus deja revue  ----------*/
+    /*Spacing*/
+  }
+  .navbar .nav-links ul li {
+    margin: 25px 0;
+    font-size: 1.2em;
+  }
+
+  /*Ca sera le tiroir <div>*/
+  .nav-links {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*Calque blue*/
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*Position initial du tiroir*/
+    margin-left: -100%;
+    transition: all 0.5s ease;
+    /**Active le tiroir javascript */
+    /* ajoute la class */
+    /*   navLinks.classList.toggle("mobile-menu");  */
+    /*effet deplacement tiroir - relache le tiroir*/
+    /* Diposition en bloc */
+  }
+  .nav-links.mobile-menu {
+    margin-left: 0;
+  }
+  .nav-links ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/*=============================================
+   Fin de compilation Overlay
+=============================================*/
 .hero__text-box {
   position: absolute;
   display: flex;

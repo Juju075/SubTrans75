@@ -1,0 +1,55 @@
+/*=============================================
+   Compilation de Overlay - Start
+=============================================*/
+@media screen and (max-width: 900px) {
+  /* click hamburge addclasslist .navbar à */
+  .navbar {
+    width: 100%;
+    padding: 0;
+
+    /*----------  Audessus deja revue  ----------*/
+
+    /*Spacing*/
+    .nav-links ul li {
+      margin: 25px 0;
+      font-size: 1.2em;
+    }
+  }
+  /*Ca sera le tiroir <div>*/
+  .nav-links {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    /*Calque blue*/
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /*Position initial du tiroir*/
+    margin-left: -100%;
+    transition: all 0.5s ease;
+
+    /**Active le tiroir javascript */
+    /* ajoute la class */
+    /*   navLinks.classList.toggle("mobile-menu");  */
+    /*effet deplacement tiroir - relache le tiroir*/
+    &.mobile-menu {
+      margin-left: 0;
+    }
+
+    /* Diposition en bloc */
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+/*=============================================
+   Fin de compilation Overlay
+=============================================*/

@@ -21,8 +21,8 @@
     <!-- Section 1/9 | Header -->
     <!-- =================================================================== -->
     <header class="header">
-      <!-- Desktop Navigation -->
-      <nav class="container flex">
+      <!-- Nouverau .navbar ajouter -->
+      <nav class="container flex navbar">
         <!-- 1 - Logo -->
         <div class="header__block">
           <a href="#" class="header__logo"
@@ -34,7 +34,9 @@
           >
         </div>
         <!-- 2 - Links Desktop -->
-        <div class="header__links">
+
+        <div class="header__links nav-links" id="nav-links">
+          <!-- manque li -->
           <a href="#">Our vehicules</a>
           <a href="#">About transport society</a>
           <a href="#">The refrigeration specialist</a>
@@ -45,6 +47,13 @@
         <div class="header__location hide-for-tablet">
           <img src="./images/flag.jpg" alt="flag" /><span>South Africa</span>
           <i class="bx bx-chevron-down"></i>
+        </div>
+        <div class="hamburger-container menu-hamburger">
+          <div class="menu">
+            <span class="line one"></span>
+            <span class="line two"></span>
+            <span class="line three"></span>
+          </div>
         </div>
       </nav>
     </header>
@@ -673,5 +682,6 @@
       </div>
     </section>
     <script src="/js/script.js"></script>
+    <script src="/js/hamburger.js"></script>
   </body>
 </html>
