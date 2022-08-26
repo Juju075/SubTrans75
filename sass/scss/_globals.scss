@@ -94,6 +94,7 @@ button,
   }
 }
 .only-for-mobile {
+  background: red;
   //Mobile to tablet
   @media screen and (max-width: 640px) {
     display: none;
@@ -121,7 +122,6 @@ button,
 }
 
 .hide-text-for-desktop {
-  background: red;
   @media screen and (min-width: 640px) {
     display: none;
   }
