@@ -367,6 +367,7 @@ button,
 @media screen and (max-width: 800px) {
   .vehicules__title {
     font-size: 1.875rem;
+    transition: 1s all ease;
   }
 }
 @media screen and (max-width: 640px) {
@@ -376,6 +377,7 @@ button,
   .vehicules__title p {
     font-size: 35px;
     line-height: 35px;
+    transition: 1s all ease;
   }
 }
 .vehicules__frame {
@@ -515,7 +517,7 @@ button,
 }
 @media screen and (max-width: 640px) {
   .vehicules__card2 .image2:hover {
-    background: url("/images/models/1/truck_H30_medium.jpg") no-repeat;
+    background: url("/images/models/2/truck_FTR850_medium.jpg") no-repeat;
   }
 }
 .vehicules__card3 {
@@ -573,7 +575,7 @@ button,
 }
 @media screen and (max-width: 640px) {
   .vehicules__card3 .image3:hover {
-    background: url("/images/models/1/truck_H30_medium.jpg") no-repeat;
+    background: url("/images/models/3/truck_NQR500_medium.jpg") no-repeat;
   }
 }
 .vehicules__card4 {
@@ -638,7 +640,7 @@ button,
 }
 @media screen and (max-width: 640px) {
   .vehicules__card4 .image4:hover {
-    background: url("/images/models/1/truck_H30_medium.jpg") no-repeat;
+    background: url("/images/models/4/truck_dyna_medium.jpg") no-repeat;
   }
 }
 .vehicules__card5 {
@@ -703,14 +705,20 @@ button,
 }
 @media screen and (max-width: 640px) {
   .vehicules__card5 .image5:hover {
-    background: url("/images/models/1/truck_H30_medium.jpg") no-repeat;
+    background: url("/images/models/5/truck_fourgon_medium.jpg") no-repeat;
   }
 }
-.vehicules .model {
+.vehicules .truck-model {
   padding-left: 1.25rem;
   font-size: 1.25rem;
   height: 3.75rem;
   font-weight: bold;
+  transition: 1s all ease;
+}
+@media screen and (max-width: 640px) {
+  .vehicules .truck-model {
+    text-align: center;
+  }
 }
 
 .about {

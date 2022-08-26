@@ -17,12 +17,14 @@
     }
     @media screen and (max-width: 800px) {
       font-size: 1.875rem;
+      transition: 1s all ease;
     }
     @media screen and (max-width: 640px) {
       width: 360px;
       p {
         font-size: 35px;
         line-height: 35px;
+        transition: 1s all ease;
       }
     }
   }
@@ -140,7 +142,7 @@
         background: url("/images/models/2/truck_FTR850_big.jpg") no-repeat;
       }
       @media screen and (max-width: 640px) {
-        background: url("/images/models/1/truck_H30_medium.jpg") no-repeat;
+        background: url("/images/models/2/truck_FTR850_medium.jpg") no-repeat;
       }
     }
   }
@@ -188,7 +190,7 @@
         background: url("/images/models/3/truck_NQR500_big.jpg") no-repeat;
       }
       @media screen and (max-width: 640px) {
-        background: url("/images/models/1/truck_H30_medium.jpg") no-repeat;
+        background: url("/images/models/3/truck_NQR500_medium.jpg") no-repeat;
       }
     }
   }
@@ -242,7 +244,7 @@
         background: url("/images/models/4/truck_dyna_big.jpg") no-repeat;
       }
       @media screen and (max-width: 640px) {
-        background: url("/images/models/1/truck_H30_medium.jpg") no-repeat;
+        background: url("/images/models/4/truck_dyna_medium.jpg") no-repeat;
       }
     }
   }
@@ -296,14 +298,18 @@
         background: url("/images/models/5/truck_fourgon_big.jpg") no-repeat;
       }
       @media screen and (max-width: 640px) {
-        background: url("/images/models/1/truck_H30_medium.jpg") no-repeat;
+        background: url("/images/models/5/truck_fourgon_medium.jpg") no-repeat;
       }
     }
   }
-  .model {
+  .truck-model {
     padding-left: 1.25rem;
     font-size: 1.25rem;
     height: 3.75rem;
     font-weight: bold;
+    transition: 1s all ease;
+    @media screen and (max-width: 640px) {
+      text-align: center;
+    }
   }
 }
