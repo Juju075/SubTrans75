@@ -51,7 +51,7 @@
         input:focus,
         .wrapper .box input:valid {
           padding: 5px 5px;
-          background: green;
+          background: $greenTruck;
           opacity: 0.3;
           margin-top: 0.625rem;
           transition: 0.5s all ease;
@@ -62,7 +62,8 @@
           font-size: 12px;
           font-weight: normal;
           color: white;
-          background: green;
+          cursor: pointer;
+          background: $greenTruck;
         }
         /*Label*/
         label {
@@ -75,8 +76,24 @@
           transition: 0.5s linear;
         }
         label.info {
-          background: red;
+          font-size: 12px;
           font-weight: normal;
+        }
+        textarea {
+          background: transparent;
+          border: 0 none;
+          width: 100%;
+          border-bottom: 1px solid gray;
+        }
+        textarea:focus {
+          background: $greenTruck;
+          opacity: 0.3;
+        }
+        select {
+          background: transparent;
+          border: none;
+          width: 100%;
+          border-bottom: 1px solid gray;
         }
       }
     }

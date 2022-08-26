@@ -337,7 +337,7 @@
         </div>
         <div class="contact__right-bloc">
           <!-- Form | Wrapper 1 row | box (1column)-->
-          <form action="#">
+          <form id="form">
             <!-- 1  Element block -->
             <div class="wrapper">
               <div class="box">
@@ -385,11 +385,23 @@
             <div class="wrapper">
               <div class="box">
                 <label for="firstname">First Name</label>
-                <input type="text" name="firstname" id="firstname" />
+                <input
+                  type="text"
+                  name="firstname"
+                  id="firstname"
+                  minlength="3"
+                  required
+                />
               </div>
               <div class="box">
                 <label for="surname">Surname</label>
-                <input type="text" name="surname" id="surname" />
+                <input
+                  type="text"
+                  name="surname"
+                  id="surname"
+                  minlength="3"
+                  required
+                />
               </div>
             </div>
 
@@ -397,11 +409,17 @@
             <div class="wrapper">
               <div class="box">
                 <label for="company">Company name</label>
-                <input type="text" name="company" id="company" required />
+                <input
+                  type="text"
+                  name="company"
+                  id="company"
+                  minlength="4"
+                  required
+                />
               </div>
               <div class="box">
                 <label for="Job">Job title</label>
-                <input type="text" name="Job" id="Job" required />
+                <input type="text" name="Job" id="Job" minlength="4" />
               </div>
             </div>
 
@@ -409,7 +427,8 @@
             <div class="wrapper">
               <div class="box">
                 <label for="email">Email address</label>
-                <input type="email" name="email" id="email" required />
+                <input type="email" name="email" id="email"
+                pattern"[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required />
               </div>
             </div>
 
@@ -421,31 +440,33 @@
                   type="tel"
                   id="phone"
                   name="phone"
-                  pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                  pattern="[0-9]{10}"
+                  minlength="5"
                   required
                 />
               </div>
               <div class="box">
+                <p>Country</p>
                 <select>
                   <option value="">South Africa</option>
                   <option value="">Country2</option>
                   <option value="">Country3</option>
                   <option value="">...</option>
                 </select>
-                <p>Country</p>
               </div>
             </div>
 
             <!-- 1  Element block -->
             <div class="wrapper">
               <div class="box">
+                <label for="message">Message.</label>
                 <textarea
                   name="message"
                   id="message"
                   placeholder="Your message"
+                  minlength="100"
                   required
                 ></textarea>
-                <label for="message">Message.</label>
               </div>
             </div>
 
@@ -453,7 +474,7 @@
             <div class="wrapper">
               <div class="box">
                 <input type="radio" name="info" id="info" />
-                <label for="info">
+                <label class="info">
                   Tick this box if beyond the response to your request for
                   information you wish to receive other communications from us
                 </label>
@@ -462,7 +483,7 @@
 
             <div class="wrapper">
               <div class="box">
-                <input type="submit" name="submit" value="Submit" />
+                <input type="submit" name="submit" value="Submit" id="submit" />
               </div>
             </div>
           </form>

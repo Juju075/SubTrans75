@@ -946,7 +946,7 @@ button,
 .contact__right-bloc .wrapper .box input:focus,
 .contact__right-bloc .wrapper .box .wrapper .box input:valid {
   padding: 5px 5px;
-  background: green;
+  background: #039b4a;
   opacity: 0.3;
   margin-top: 0.625rem;
   transition: 0.5s all ease;
@@ -957,7 +957,8 @@ button,
   font-size: 12px;
   font-weight: normal;
   color: white;
-  background: green;
+  cursor: pointer;
+  background: #039b4a;
 }
 .contact__right-bloc .wrapper .box label {
   top: 0;
@@ -969,8 +970,24 @@ button,
   transition: 0.5s linear;
 }
 .contact__right-bloc .wrapper .box label.info {
-  background: red;
+  font-size: 12px;
   font-weight: normal;
+}
+.contact__right-bloc .wrapper .box textarea {
+  background: transparent;
+  border: 0 none;
+  width: 100%;
+  border-bottom: 1px solid gray;
+}
+.contact__right-bloc .wrapper .box textarea:focus {
+  background: #039b4a;
+  opacity: 0.3;
+}
+.contact__right-bloc .wrapper .box select {
+  background: transparent;
+  border: none;
+  width: 100%;
+  border-bottom: 1px solid gray;
 }
 
 .container .flex {
