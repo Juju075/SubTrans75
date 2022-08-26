@@ -85,6 +85,11 @@ button,
   color: #fefefe;
 }
 
+.contact-hide-for-mobile {
+  @media screen and (max-width: 639px) {
+    display: none;
+  }
+}
 .only-for-mobile {
   //Mobile to tablet
   @media screen and (max-width: 640px) {
@@ -95,6 +100,12 @@ button,
 .hide-for-tablet {
   //Mobile & less
   @media screen and (max-width: 639px) {
+    display: none;
+  }
+}
+
+.hide-contact {
+  @media (min-width: 0px) and (max-width: 1146px) {
     display: none;
   }
 }

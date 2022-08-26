@@ -42,10 +42,11 @@
   }
   &__truck-background {
     background: $greenTruck;
+    height: 500px;
+
     img {
-      //TODO
-      /*coller l'image au bord droite*/
       margin-left: 43.5%;
+      padding: 0;
     }
   }
 }

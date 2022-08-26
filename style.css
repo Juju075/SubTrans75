@@ -90,6 +90,12 @@ button,
   color: #fefefe;
 }
 
+@media screen and (max-width: 639px) {
+  .contact-hide-for-mobile {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 640px) {
   .only-for-mobile {
     display: none;
@@ -98,6 +104,12 @@ button,
 
 @media screen and (max-width: 639px) {
   .hide-for-tablet {
+    display: none;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 1146px) {
+  .hide-contact {
     display: none;
   }
 }
@@ -152,7 +164,7 @@ button,
   background: #039b4a;
 }
 .container-bg-c-gray {
-  background: #e0ebeb;
+  background: #f6f8f8;
 }
 .container-bg-c-black {
   background: black;
@@ -301,10 +313,11 @@ button,
 }
 .hero__truck-background {
   background: #039b4a;
+  height: 500px;
 }
 .hero__truck-background img {
-  /*coller l'image au bord droite*/
   margin-left: 43.5%;
+  padding: 0;
 }
 
 .vehicules {
@@ -495,6 +508,11 @@ button,
   box-shadow: 5px 9px 22px 4px rgba(0, 0, 0, 0.36);
   /*4*/
 }
+@media (min-width: 1146px) and (max-width: 2000px) {
+  .vehicules__card4 {
+    margin-left: 15%;
+  }
+}
 .vehicules__card4 .image4 {
   position: relative;
   display: inline-block;
@@ -542,6 +560,11 @@ button,
   -webkit-box-shadow: 5px 9px 22px 4px rgba(0, 0, 0, 0.36);
   box-shadow: 5px 9px 22px 4px rgba(0, 0, 0, 0.36);
   /*5*/
+}
+@media (min-width: 1146px) and (max-width: 2000px) {
+  .vehicules__card5 {
+    margin-right: 15%;
+  }
 }
 .vehicules__card5 .image5 {
   position: relative;
@@ -892,8 +915,16 @@ button,
   font-weight: normal;
 }
 
+.contact {
+  /*Mobile*/
+}
 .contact__left-bloc {
   padding: 50px;
+}
+@media screen and (max-width: 639px) {
+  .contact__left-bloc {
+    padding: 250px 0 250px 0;
+  }
 }
 .contact__left-bloc h6 {
   font-family: "Poppins", sans-serif;
@@ -914,84 +945,91 @@ button,
   font-weight: normal;
   line-height: 1.875rem;
 }
-.contact__right-bloc {
-  padding: 50px;
-  /* GRID */
-}
-.contact__right-bloc .wrapper {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 1.875rem;
-  gap: 1.875rem;
-  /* Element */
-}
-.contact__right-bloc .wrapper .box {
-  width: 100%;
-  position: relative;
-  padding: 1.25rem;
-  /*Input*/
-  /*Label*/
-}
-.contact__right-bloc .wrapper .box input {
-  width: 100%;
-  font-size: 1.25rem;
-  background: transparent;
-  border: none;
-  outline: none;
-  /* outline-sytle de border */
-  border-bottom: 1px solid gray;
-  transition: 0.5s linear;
-}
-.contact__right-bloc .wrapper .box input:focus,
+@media (min-width: 639px) and (max-width: 2000px) {
+  .contact__right-bloc {
+    padding: 50px;
+    /* GRID */
+  }
+  .contact__right-bloc .wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1.875rem;
+    gap: 1.875rem;
+    /* Element */
+  }
+  .contact__right-bloc .wrapper .box {
+    width: 100%;
+    position: relative;
+    padding: 1.25rem;
+    /*Input*/
+    /*Label*/
+  }
+  .contact__right-bloc .wrapper .box input {
+    width: 100%;
+    font-size: 1.25rem;
+    background: transparent;
+    border: none;
+    outline: none;
+    /* outline-sytle de border */
+    border-bottom: 1px solid gray;
+    transition: 0.5s linear;
+  }
+  .contact__right-bloc .wrapper .box input:focus,
 .contact__right-bloc .wrapper .box .wrapper .box input:valid {
-  padding: 5px 5px;
-  background: #039b4a;
-  opacity: 0.3;
-  margin-top: 0.625rem;
-  transition: 0.5s all ease;
+    padding: 5px 5px;
+    background: #039b4a;
+    opacity: 0.3;
+    margin-top: 0.625rem;
+    transition: 0.5s all ease;
+  }
+  .contact__right-bloc .wrapper .box input[type=submit] {
+    width: 250px;
+    height: 40px;
+    font-size: 12px;
+    font-weight: normal;
+    color: white;
+    cursor: pointer;
+    background: #039b4a;
+  }
+  .contact__right-bloc .wrapper .box label {
+    top: 0;
+    left: 0;
+    font-family: "Poppins", sans-serif;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.5s linear;
+  }
+  .contact__right-bloc .wrapper .box label.info {
+    font-size: 12px;
+    font-weight: normal;
+  }
+  .contact__right-bloc .wrapper .box textarea {
+    background: transparent;
+    border: 0 none;
+    width: 100%;
+    border-bottom: 1px solid gray;
+  }
+  .contact__right-bloc .wrapper .box textarea:focus {
+    background: #039b4a;
+    opacity: 0.3;
+  }
+  .contact__right-bloc .wrapper .box select {
+    background: transparent;
+    border: none;
+    width: 100%;
+    border-bottom: 1px solid gray;
+  }
 }
-.contact__right-bloc .wrapper .box input[type=submit] {
-  width: 250px;
-  height: 40px;
-  font-size: 12px;
-  font-weight: normal;
-  color: white;
-  cursor: pointer;
-  background: #039b4a;
+@media screen and (max-width: 639px) {
+  .contact {
+    display: grid;
+  }
 }
-.contact__right-bloc .wrapper .box label {
-  top: 0;
-  left: 0;
-  font-family: "Poppins", sans-serif;
-  color: black;
-  font-size: 14px;
-  font-weight: bold;
-  transition: 0.5s linear;
-}
-.contact__right-bloc .wrapper .box label.info {
-  font-size: 12px;
-  font-weight: normal;
-}
-.contact__right-bloc .wrapper .box textarea {
-  background: transparent;
-  border: 0 none;
-  width: 100%;
-  border-bottom: 1px solid gray;
-}
-.contact__right-bloc .wrapper .box textarea:focus {
-  background: #039b4a;
-  opacity: 0.3;
-}
-.contact__right-bloc .wrapper .box select {
-  background: transparent;
-  border: none;
-  width: 100%;
-  border-bottom: 1px solid gray;
-}
-
-.container .flex {
+.contact .container .flex {
   background: gray;
+  /*Fin media*/
 }
 
 .maps__content-address {
