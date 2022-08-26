@@ -6,6 +6,8 @@ const town1 = document.getElementById("town1");
 const town2 = document.getElementById("town2");
 const town3 = document.getElementById("town3");
 
+const allButtons = document.querySelector(".button");
+const button2 = document.querySelector(".button");
 const footerLinkEl1 = document.getElementById("nofollow1");
 const footerLinkEl2 = document.getElementById("nofollow2");
 
@@ -44,6 +46,12 @@ town3.addEventListener("click", (ev) => {
   maps.innerHTML = `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d251738.50631630272!2d18.60505198452243!3d-34.00296414904738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc516f59f60035%3A0x27935b3a64514879!2s111%20Kruis%20Rd%2C%20Brackenfell%2C%20Cape%20Town%2C%207925%2C%20Afrique%20du%20Sud!5e0!3m2!1sfr!2sfr!4v1661289629296!5m2!1sfr!2sfr" width="1440" height="700" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`;
 });
 
+allButtons.addEventListener("click", (ev) => {
+  ev.preventDefault();
+});
+button2.addEventListener("click", (ev) => {
+  ev.preventDefault();
+});
 footerLinkEl1.addEventListener("click", (ev) => {
   ev.preventDefault();
 });

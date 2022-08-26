@@ -11,8 +11,8 @@
 
     @media screen and (max-width: 640px) {
       justify-content: center;
-      margin-left: 20%;
-      width: 300px;
+      margin-left: 0;
+      width: 412px;
       padding: auto;
       transition: 1s all ease;
     }
@@ -26,6 +26,7 @@
       font-weight: bold;
       line-height: 2.1875rem;
       @media screen and (max-width: 640px) {
+        width: 380px;
         line-height: 50px;
       }
     }

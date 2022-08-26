@@ -47,10 +47,14 @@
     }
   }
 
+  /*mettre hamburger ici*/
   &__location {
     display: flex;
     align-items: center;
     font-weight: bold;
+    @media screen and (max-width: 640px) {
+      display: none;
+    }
 
     img {
       width: 2.5rem;

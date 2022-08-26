@@ -39,7 +39,6 @@ li {
 
 button,
 .button {
-  display: inline-block;
   vertical-align: middle;
   margin: 0 0 1rem 0;
   padding: 0;
@@ -47,6 +46,7 @@ button,
   height: 40px;
   font-size: 14px;
   font-weight: 400;
+  display: inline-block;
   line-height: 1;
   color: black;
   font-family: "Mulish", sans-serif;
@@ -57,6 +57,9 @@ button,
   background-color: white;
   cursor: pointer;
   transition: background-color 0.25s ease-out, color 0.25s ease-out;
+  @media screen and (max-width: 640px) {
+    margin-top: 50px;
+  }
 }
 
 .button.green {

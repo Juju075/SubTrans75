@@ -1,5 +1,5 @@
 .about {
-  margin: 1.875rem 0.9375rem 0 0.9375rem;
+  margin: 9.375rem 0.9375rem 0 0.9375rem;
 
   &__text {
     display: block;
@@ -11,6 +11,15 @@
       font-size: 1.875rem;
       font-weight: bold;
       line-height: 2.1875rem;
+      @media screen and (max-width: 990px) {
+        font-size: 50px;
+        line-height: 50px;
+      }
+      @media screen and (max-width: 640px) {
+        padding-left: 60px;
+        font-size: 45px;
+        line-height: 60px;
+      }
     }
     .subtitle {
       font-family: "Poppins", sans-serif;
@@ -20,8 +29,19 @@
       margin-top: 0.625rem;
       color: green;
       @media screen and (max-width: 1146px) {
-        font-size: 1.375rem;
+        font-size: 18px;
         line-height: 1.375rem;
+      }
+      @media screen and (max-width: 990px) {
+        font-size: 45px;
+        line-height: 50px;
+      }
+      @media screen and (max-width: 640px) {
+        margin: 50px 0 0 12px;
+        text-align: center;
+        width: 412px;
+        font-size: 45px;
+        line-height: 80px;
       }
     }
     .description {
@@ -32,6 +52,14 @@
       @media screen and (max-width: 1146px) {
         padding-top: 1.375rem;
         font-size: 1.375rem;
+      }
+      @media screen and (max-width: 990px) {
+        font-size: 35px;
+        line-height: 50px;
+        justify-content: space-between;
+      }
+      @media screen and (max-width: 640px) {
+        display: none;
       }
     }
     /* Mozilla navigateur CSS Grid Inspector */
@@ -46,6 +74,9 @@
         "title title title"
         "vehicles customers employees "
         "sites turnover refrigeration";
+      @media screen and (max-width: 640px) {
+        display: none;
+      }
       p {
         font-size: 0.875rem;
       }
@@ -114,6 +145,9 @@
       background-image: url("/images/truck_driver2.jpg");
       background-repeat: no-repeat;
       width: 10.875rem;
+    }
+    @media screen and (max-width: 990px) {
+      display: none;
     }
   }
 }
