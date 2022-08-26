@@ -28,7 +28,6 @@ h4 {
 a,
 a:visited,
 a:hover {
-  color: white; //TODO
   text-decoration: none;
 }
 
@@ -41,10 +40,9 @@ button,
 .button {
   vertical-align: middle;
   margin: 0 0 1rem 0;
-  padding: 0;
+  padding: 10px;
   width: 280px;
   height: 40px;
-  font-size: 14px;
   font-weight: 400;
   display: inline-block;
   line-height: 1;
@@ -94,7 +92,6 @@ button,
   }
 }
 .only-for-mobile {
-  background: red;
   //Mobile to tablet
   @media screen and (max-width: 640px) {
     display: none;
@@ -142,7 +139,6 @@ button,
 .container {
   max-width: 90rem;
   margin: auto;
-  /*border: 1px solid red;*/
 
   /*----------  Hyperclass ----------*/
   &--pall {

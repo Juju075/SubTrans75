@@ -4,6 +4,9 @@
   &__legal {
     display: flex;
     align-items: center;
+    a {
+      color: white;
+    }
     p {
       font-family: "Mulish", sans-serif;
       font-weight: normal;

@@ -34,7 +34,6 @@ h4 {
 a,
 a:visited,
 a:hover {
-  color: white;
   text-decoration: none;
 }
 
@@ -47,10 +46,9 @@ button,
 .button {
   vertical-align: middle;
   margin: 0 0 1rem 0;
-  padding: 0;
+  padding: 10px;
   width: 280px;
   height: 40px;
-  font-size: 14px;
   font-weight: 400;
   display: inline-block;
   line-height: 1;
@@ -104,9 +102,6 @@ button,
   }
 }
 
-.only-for-mobile {
-  background: red;
-}
 @media screen and (max-width: 640px) {
   .only-for-mobile {
     display: none;
@@ -151,7 +146,6 @@ button,
 .container {
   max-width: 90rem;
   margin: auto;
-  /*border: 1px solid red;*/
   /*----------  Hyperclass ----------*/
 }
 .container--pall {
@@ -1550,6 +1544,9 @@ button,
 .footer-bis__legal {
   display: flex;
   align-items: center;
+}
+.footer-bis__legal a {
+  color: white;
 }
 .footer-bis__legal p {
   font-family: "Mulish", sans-serif;
