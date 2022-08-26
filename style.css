@@ -48,19 +48,20 @@ button,
   vertical-align: middle;
   margin: 0 0 1rem 0;
   padding: 0;
-  border-radius: 0;
-  border: 0;
-  /*transition: opacity 300ms ease-in-out;*/
-  transition: background-color 0.25s ease-out, color 0.25s ease-out;
-  /*font-family: inherit;*/
-  font-weight: 100;
+  width: 280px;
+  height: 40px;
   font-size: 14px;
-  /*font-weight: normal;*/
+  font-weight: 400;
   line-height: 1;
-  text-align: center;
-  cursor: pointer;
-  background-color: white;
   color: black;
+  font-family: "Mulish", sans-serif;
+  text-align: center;
+  border: 0;
+  -webkit-appearance: none;
+  border-radius: 0;
+  background-color: white;
+  cursor: pointer;
+  transition: background-color 0.25s ease-out, color 0.25s ease-out;
 }
 
 .button.green {
@@ -116,6 +117,15 @@ button,
 
 @media screen and (max-width: 1146px) {
   .hide-for-desktop {
+    display: none;
+  }
+}
+
+.hide-text-for-desktop {
+  background: red;
+}
+@media screen and (max-width: 800px) {
+  .hide-text-for-desktop {
     display: none;
   }
 }
