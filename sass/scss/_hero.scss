@@ -16,6 +16,11 @@
       padding: auto;
       transition: 1s all ease;
     }
+    .hide {
+      @media screen and (max-width: 901px) {
+        display: none;
+      }
+    }
   }
 
   &__title {

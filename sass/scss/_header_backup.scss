@@ -8,12 +8,6 @@
     padding-right: 3.45rem;
     padding-bottom: 0.625rem;
     padding-left: 3.45rem;
-
-    .menu-hamburger {
-      @media screen and (min-width: 901px) {
-        display: none;
-      }
-    }
   }
 
   &__block {
@@ -58,7 +52,7 @@
     display: flex;
     align-items: center;
     font-weight: bold;
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 640px) {
       display: none;
     }
 

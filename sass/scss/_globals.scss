@@ -122,7 +122,7 @@ button,
 
 .hide-text-for-desktop {
   background: red;
-  @media screen and (max-width: 800px) {
+  @media screen and (min-width: 640px) {
     display: none;
   }
 }
