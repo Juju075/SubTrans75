@@ -33,6 +33,8 @@
             society</span
           >
         </div>
+
+        <!-- ul li-->
         <!-- 2 - Links Desktop -->
         <div class="header__links nav-links" id="nav-links">
           <a href="#">Our vehicules</a>
@@ -62,7 +64,7 @@
     <section class="hero">
       <div class="container flex-jc-sb">
         <div class="hero__text-box">
-          <div id="hide-for hamburger" class="">
+          <div id="hide-for-hamburger" class="">
             <div class="hero__title">
               <p>Refrigerated vehicle</p>
               <p>rental</p>
@@ -92,27 +94,27 @@
 
         <div class="vehicules__frame">
           <div class="vehicules__card1">
-            <div class="image1" alt="image-truckH30"></div>
+            <div class="image1"></div>
             <div class="truck-model">UD Trucks Croner<br />PKE250 H30</div>
           </div>
 
           <div class="vehicules__card2">
-            <div class="image2" alt="image-FTR850"></div>
+            <div class="image2"></div>
             <div class="truck-model">Isuzu FTR850</div>
           </div>
 
           <div class="vehicules__card3">
-            <div class="image3" alt="image-NQR 500"></div>
+            <div class="image3"></div>
             <div class="truck-model">Isuzu NQR 500</div>
           </div>
 
           <div class="vehicules__card4">
-            <div class="image4" alt="image-Dyna"></div>
+            <div class="image4"></div>
             <div class="truck-model">Toyota Dyna</div>
           </div>
 
           <div class="vehicules__card5">
-            <div class="image5" alt="image-fourgon"></div>
+            <div class="image5"></div>
             <div class="truck-model">Fiat Doblo fourgon</div>
           </div>
         </div>
@@ -186,7 +188,7 @@
             </div>
           </div>
         </div>
-        <img class="hide-for-tablet" />
+        <img src="" class="hide-for-tablet" alt="" />
       </article>
     </section>
     <!-- =================================================================== -->
@@ -220,7 +222,7 @@
       </div>
       <!-- 4 Bloc El-->
       <div class="expertises__car">
-        <img src="/images/car.JPG" alt="car" />
+        <img src="./images/car.JPG" alt="car" />
       </div>
       <!-- 5 Bloc El-->
       <div class="expertises__text3">
@@ -261,7 +263,7 @@
           <!-- hide for mobile -->
           <img
             class="hide-for-desktop"
-            src="/images/technician.webp"
+            src="./images/technician.webp"
             alt="image-technician"
           />
 
@@ -333,7 +335,7 @@
         <div class="contact__left-bloc">
           <h6>Contact us</h6>
           <div class="trucks hide-contact hide-contact">
-            <img src="/images/contact-trucks.JPG" alt="contact-truck" />
+            <img src="./images/contact-trucks.JPG" alt="contact-truck" />
           </div>
           <p>
             For more information, please don't<br />
@@ -356,7 +358,7 @@
                   <div>Profile</div>
                   <div>
                     <div class="inline">
-                      <input type="radio" name="consumer" id="consumer" />
+                      <input type="radio" name="consumer" />
                       <p>Consumer</p>
                     </div>
                     <div class="inline">
@@ -376,15 +378,11 @@
                   <div>Title</div>
                   <div>
                     <div class="inline">
-                      <input type="radio" name="consumer" id="consumer" />
+                      <input type="radio" name="consumer" />
                       <p>Mr</p>
                     </div>
                     <div class="inline">
-                      <input
-                        type="radio"
-                        name="professionnal"
-                        id="professionnal"
-                      />
+                      <input type="radio" name="professionnal" />
                       <p>Mrs</p>
                     </div>
                   </div>
@@ -438,8 +436,13 @@
             <div class="wrapper">
               <div class="box">
                 <label for="email">Email address</label>
-                <input type="email" name="email" id="email"
-                pattern"[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required />
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                  required
+                />
               </div>
             </div>
 
@@ -680,7 +683,7 @@
         </div>
       </div>
     </section>
-    <script src="/js/script.js"></script>
-    <script src="/js/hamburger.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/hamburger.js"></script>
   </body>
 </html>

@@ -15,7 +15,6 @@ console.log(maps, location1, location2, location3);
 
 // Click su address | desactive prevent | affiche la carte
 //Plus simple faire une boucle
-//TODO Refactorer le code pour ajouter le meme listener a plusieur elements diff.
 location1.addEventListener("click", (ev) => {
   ev.preventDefault();
   maps.innerHTML = `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d769783.3017549515!2d27.964346562343092!3d-26.329562941505152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9517cba6dd8fbf%3A0x510fb0f8056d38c3!2s99%20Skew%20Rd%2C%20Anderbolt%2C%20Boksburg%2C%201459%2C%20Afrique%20du%20Sud!5e0!3m2!1sfr!2sfr!4v1661289692868!5m2!1sfr!2sfr" width="1440" height="700" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`;
